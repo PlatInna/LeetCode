@@ -10,6 +10,8 @@ reach the destination, return -1.
 Note that if the car reaches a gas station with 0 fuel left, the car can still refuel there.  If the car reaches 
 the destination with 0 fuel left, it is still considered to have arrived.
 
+from leetcode:
+
 Approach 1: Dynamic Programming
 Intuition
 Let's determine dp[i], the farthest location we can get to using i refueling stops. This is motivated by the fact that we want the smallest i 
