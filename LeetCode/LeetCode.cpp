@@ -6,17 +6,18 @@
 //#include "minRefuelStops.h"
 //#include "palindromePairs.h"
 //#include "isSumEqual.h"
-#include "maximumUnits.h"
+//#include "maximumUnits.h"
+#include "generateParenthesis.h"
 #include "profile.h"
 
 using namespace std;
 
 int main() {
     LOG_DURATION("Total duration");
-    vector<vector<int>> boxTypes = { {1, 1} ,{2, 4},{3, 2} };
-    int truckSize = 4;
-
-    auto res = maximumUnits(boxTypes, truckSize);
-
+    int n = 6;
+    auto res = generateParenthesis(n);
+    for (auto el : res) {
+        cout << el << endl;
+    }
     return 0;
 }

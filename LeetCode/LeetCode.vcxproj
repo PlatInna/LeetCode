@@ -142,6 +142,7 @@
     <ClCompile Include="LeetCode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="generateParenthesis.h" />
     <ClInclude Include="isSumEqual.h" />
     <ClInclude Include="maximumUnits.h" />
     <ClInclude Include="minRefuelStops.h" />

@@ -35,5 +35,8 @@
     <ClInclude Include="isSumEqual.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="generateParenthesis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
