@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="generateParenthesis.h" />
     <ClInclude Include="isSumEqual.h" />
+    <ClInclude Include="kInversePairs.h" />
     <ClInclude Include="maximumUnits.h" />
     <ClInclude Include="minRefuelStops.h" />
     <ClInclude Include="palindromePairs.h" />
