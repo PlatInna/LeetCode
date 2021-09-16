@@ -144,6 +144,7 @@
     <ClCompile Include="LeetCode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="generateParenthesis.h" />
     <ClInclude Include="isSumEqual.h" />
     <ClInclude Include="kInversePairs.h" />
