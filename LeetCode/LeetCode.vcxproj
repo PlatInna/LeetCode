@@ -150,6 +150,7 @@
     <ClInclude Include="kInversePairs.h" />
     <ClInclude Include="maximumUnits.h" />
     <ClInclude Include="minRefuelStops.h" />
+    <ClInclude Include="mySqrt.h" />
     <ClInclude Include="palindromePairs.h" />
     <ClInclude Include="profile.h" />
     <ClInclude Include="rangeSumQuery.h" />
