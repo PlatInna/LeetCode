@@ -53,5 +53,8 @@
     <ClInclude Include="mySqrt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="guessNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

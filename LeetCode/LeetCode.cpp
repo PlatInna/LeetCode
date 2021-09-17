@@ -15,11 +15,19 @@
 //#include "rangeSumQuery.h"
 //#include "kInversePairs.h"
 //#include "BinarySearch.h"
-#include "mySqrt.h"
+//#include "mySqrt.h"
+# include "guessNumber.h"
 
 
 using namespace std;
 
+void Test_0() {
+    int target = 233;
+    auto expected = 100;
+    //std::vector<int> v = { 0, 1, 2 };
+    ASSERT_EQUAL(guessNumber(target), expected);
+}
+/*
 void Test_1() {
     int target = 0;
     auto expected = 0;
@@ -78,7 +86,7 @@ void Test_9() {
     auto expected = 3;
     ASSERT_EQUAL(mySqrt(target), expected);
 }
-
+*/
 
 int main() {
     LOG_DURATION("Total duration");
@@ -86,15 +94,16 @@ int main() {
     TestRunner tr;
     {
         LOG_DURATION("duration");
-        RUN_TEST(tr, Test_1);
-        RUN_TEST(tr, Test_2);
-        RUN_TEST(tr, Test_3);
-        RUN_TEST(tr, Test_4);
-        RUN_TEST(tr, Test_5);
-        RUN_TEST(tr, Test_6);
-        RUN_TEST(tr, Test_7);
-        RUN_TEST(tr, Test_8);
-        RUN_TEST(tr, Test_9);
+        RUN_TEST(tr, Test_0);
+        //RUN_TEST(tr, Test_1);
+        //RUN_TEST(tr, Test_2);
+        //RUN_TEST(tr, Test_3);
+        //RUN_TEST(tr, Test_4);
+        //RUN_TEST(tr, Test_5);
+        //RUN_TEST(tr, Test_6);
+        //RUN_TEST(tr, Test_7);
+        //RUN_TEST(tr, Test_8);
+        //RUN_TEST(tr, Test_9);
     }    
 
     return 0;
