@@ -56,5 +56,8 @@
     <ClInclude Include="guessNumber.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RotatedSortedArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

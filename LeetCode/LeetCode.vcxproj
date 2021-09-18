@@ -155,6 +155,7 @@
     <ClInclude Include="palindromePairs.h" />
     <ClInclude Include="profile.h" />
     <ClInclude Include="rangeSumQuery.h" />
+    <ClInclude Include="RotatedSortedArray.h" />
     <ClInclude Include="test_runner.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
