@@ -28,7 +28,10 @@ int search(std::vector<int>& nums, int target) {
 	}
 }
 
-int binarySearch(vector<int>& nums, int target) {
+
+// Template #1 is used to search for an element or condition which can be determined by accessing a single index in the array.
+// Using closed interval [left, right]
+int binarySearch_1(std::vector<int>& nums, int target) {
 	if (nums.size() == 0)
 		return -1;
 
@@ -43,3 +46,4 @@ int binarySearch(vector<int>& nums, int target) {
 	// End Condition: left > right
 	return -1;
 }
+

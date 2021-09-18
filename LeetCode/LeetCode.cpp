@@ -98,7 +98,7 @@ int main() {
     TestRunner tr;
     {
         LOG_DURATION("duration");
-        RUN_TEST(tr, Test_0);
+        //RUN_TEST(tr, Test_0);
         RUN_TEST(tr, Test_1);
         RUN_TEST(tr, Test_2);
         RUN_TEST(tr, Test_3);
