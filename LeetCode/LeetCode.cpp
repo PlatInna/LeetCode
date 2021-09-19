@@ -17,59 +17,67 @@
 //#include "BinarySearch.h"
 //#include "mySqrt.h"
 //# include "guessNumber.h"
-# include "RotatedSortedArray.h"
+//# include "RotatedSortedArray.h"
+# include "FirstBadVersion.h"
 
 
 using namespace std;
 
 void Test_0() {
-    int target = 0;
-    auto expected = 0;
-    std::vector<int> v = { 0, 1, 2 };
-    ASSERT_EQUAL(search(v, target), expected);
+    int target = 1;
+    int bad = 1;
+    auto expected = 1;
+    //std::vector<int> v = { 0, 1, 2 };
+    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
 }
 
 void Test_1() {
-    int target = 0;
-    auto expected = 4;
-    std::vector<int> v = { 4,5,6,7,0,1,2 };
-    ASSERT_EQUAL(search(v, target), expected);
+    int target = 5;
+    int bad = 1;
+    auto expected = 1;
+    //std::vector<int> v = { 0, 1, 2 };
+    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
 }
 
 void Test_2() {
-    int target = 3;
-    auto expected = -1;
-    std::vector<int> v = { 4,5,6,7,0,1,2 };
-    ASSERT_EQUAL(search(v, target), expected);
+    int target = 5;
+    int bad = 2;
+    auto expected = 2;
+    //std::vector<int> v = { 0, 1, 2 };
+    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
 }
 
 void Test_3() {
-    int target = 3;
-    auto expected = -1;
-    std::vector<int> v = { 2 };
-    ASSERT_EQUAL(search(v, target), expected);
+    int target = 5;
+    int bad = 3;
+    auto expected = 3;
+    //std::vector<int> v = { 0, 1, 2 };
+    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
 }
 
 void Test_4() {
-    int target = 2;
-    auto expected = 0;
-    std::vector<int> v = { 2 };
-    ASSERT_EQUAL(search(v, target), expected);
+    int target = 5;
+    int bad = 4;
+    auto expected = 4;
+    //std::vector<int> v = { 0, 1, 2 };
+    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
 }
 
 void Test_5() {
-    int target = 2;
-    auto expected = 1;
-    std::vector<int> v = { 0, 2 };
-    ASSERT_EQUAL(search(v, target), expected);
+    int target = 5;
+    int bad = 5;
+    auto expected = 5;
+    //std::vector<int> v = { 0, 1, 2 };
+    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
 }
 
 
 void Test_6() {
-    int target = 2;
-    auto expected = 0;
-    std::vector<int> v = { 2, 0 };
-    ASSERT_EQUAL(search(v, target), expected);
+    int target = 5;
+    int bad = 1;
+    auto expected = 1;
+    //std::vector<int> v = { 0, 1, 2 };
+    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
 }
 
 /*
@@ -98,7 +106,7 @@ int main() {
     TestRunner tr;
     {
         LOG_DURATION("duration");
-        //RUN_TEST(tr, Test_0);
+        RUN_TEST(tr, Test_0);
         RUN_TEST(tr, Test_1);
         RUN_TEST(tr, Test_2);
         RUN_TEST(tr, Test_3);

@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="FirstBadVersion.h" />
     <ClInclude Include="generateParenthesis.h" />
     <ClInclude Include="guessNumber.h" />
     <ClInclude Include="isSumEqual.h" />
