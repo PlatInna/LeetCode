@@ -18,81 +18,67 @@
 //#include "mySqrt.h"
 //# include "guessNumber.h"
 //# include "RotatedSortedArray.h"
-# include "FirstBadVersion.h"
+//# include "FirstBadVersion.h"
+# include "FindPeakElement.h"
 
 
 using namespace std;
 
 void Test_0() {
-    int target = 1;
-    int bad = 1;
-    auto expected = 1;
-    //std::vector<int> v = { 0, 1, 2 };
-    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
+    //int target = 1;
+    auto expected = 0;
+    std::vector<int> v = { 0 };
+    ASSERT_EQUAL(findPeakElement(v), expected);
 }
 
 void Test_1() {
-    int target = 5;
-    int bad = 1;
     auto expected = 1;
-    //std::vector<int> v = { 0, 1, 2 };
-    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
+    std::vector<int> v = { 0, 1};
+    ASSERT_EQUAL(findPeakElement(v), expected);
 }
 
 void Test_2() {
-    int target = 5;
-    int bad = 2;
-    auto expected = 2;
-    //std::vector<int> v = { 0, 1, 2 };
-    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
+    auto expected = 0;
+    std::vector<int> v = { 1, 0 };
+    ASSERT_EQUAL(findPeakElement(v), expected);
 }
 
 void Test_3() {
-    int target = 5;
-    int bad = 3;
-    auto expected = 3;
-    //std::vector<int> v = { 0, 1, 2 };
-    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
+    auto expected = 2;
+    std::vector<int> v = { 0, 1, 2 };
+    ASSERT_EQUAL(findPeakElement(v), expected);
 }
 
 void Test_4() {
-    int target = 5;
-    int bad = 4;
-    auto expected = 4;
-    //std::vector<int> v = { 0, 1, 2 };
-    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
+    auto expected = 0;
+    std::vector<int> v = { 2, 1, 0 };
+    ASSERT_EQUAL(findPeakElement(v), expected);
 }
 
 void Test_5() {
-    int target = 5;
-    int bad = 5;
-    auto expected = 5;
-    //std::vector<int> v = { 0, 1, 2 };
-    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
+    auto expected = 2;
+    std::vector<int> v = { 0, 1, 2, 1, 0 };
+    ASSERT_EQUAL(findPeakElement(v), expected);
 }
-
 
 void Test_6() {
-    int target = 5;
-    int bad = 1;
-    auto expected = 1;
-    //std::vector<int> v = { 0, 1, 2 };
-    ASSERT_EQUAL(firstBadVersion(target, bad), expected);
+    auto expected = 5;
+    std::vector<int> v = { 1,2,1,3,5,6,4 };
+    ASSERT_EQUAL(findPeakElement(v), expected);
 }
 
-/*
 void Test_7() {
-    int target = 6;
-    auto expected = 2;
-    ASSERT_EQUAL(mySqrt(target), expected);
+    auto expected = 4;
+    std::vector<int> v = { 0,1,2,1,3,2,1,6,4 };
+    ASSERT_EQUAL(findPeakElement(v), expected);
 }
 
 void Test_8() {
-    int target = 7;
-    auto expected = 2;
-    ASSERT_EQUAL(mySqrt(target), expected);
+    auto expected = 4;
+    std::vector<int> v = { 0,1,2,1,2,1,3,2,1,0 };
+    ASSERT_EQUAL(findPeakElement(v), expected);
 }
-
+/*
 void Test_9() {
     int target = 9;
     auto expected = 3;
@@ -113,8 +99,8 @@ int main() {
         RUN_TEST(tr, Test_4);
         RUN_TEST(tr, Test_5);
         RUN_TEST(tr, Test_6);
-        //RUN_TEST(tr, Test_7);
-        //RUN_TEST(tr, Test_8);
+        RUN_TEST(tr, Test_7);
+        RUN_TEST(tr, Test_8);
         //RUN_TEST(tr, Test_9);
     }    
 
