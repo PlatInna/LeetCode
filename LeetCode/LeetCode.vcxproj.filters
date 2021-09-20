@@ -65,5 +65,8 @@
     <ClInclude Include="FindPeakElement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FindMinInRotatedSortedArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

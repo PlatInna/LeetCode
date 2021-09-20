@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 
-int searchInSegment(vector<int>& nums, int l, int r, int target) {
+int searchInSegment(std::vector<int>& nums, int l, int r, int target) {
 	int m = 0;
 	if (l == r) {
 		if (nums[l] == target) return l;
@@ -19,7 +19,7 @@ int searchInSegment(vector<int>& nums, int l, int r, int target) {
 }
 
 // find position of max element using recursive binary search 
-int findMax(vector<int>& v, int l, int r) { 
+int findMax(std::vector<int>& v, int l, int r) { 
 
 	if (l == r) return l;
 	int m = l + (r - l) / 2;
@@ -32,7 +32,7 @@ int findMax(vector<int>& v, int l, int r) {
 		return findMax(v, m + 1, r);
 }
 
-int search(vector<int>& nums, int target) {
+int search(std::vector<int>& nums, int target) {
 	 
 	int l1 = 0, r1 = 0, l2 = 0, r2 = nums.size() - 1;
 	if (nums.size() == 1) {
