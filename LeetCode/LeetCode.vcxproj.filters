@@ -68,5 +68,8 @@
     <ClInclude Include="FindMinInRotatedSortedArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SearchForRange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

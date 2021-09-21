@@ -17,15 +17,10 @@ int search(std::vector<int>& nums, int target) {
 		}
 	}
 
-	if (nums[r] != target) {
-		if (nums[l] != target)
-			return -1;
-		else
-			return l;
-	}
-	else {
-		return r;
-	}
+	if (nums[r] == target) return r;
+	if (nums[l] == target) return l;
+
+	return -1;
 }
 
 
