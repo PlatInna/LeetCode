@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="FindClosestElements.h" />
     <ClInclude Include="FindMinInRotatedSortedArray.h" />
     <ClInclude Include="FindPeakElement.h" />
     <ClInclude Include="FirstBadVersion.h" />

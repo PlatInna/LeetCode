@@ -10,7 +10,7 @@ std::vector<int> searchRange(std::vector<int>& nums, int target) {
 
 	if (nums.size() == 0) return res;
 
-	int l = 0, r = nums.size() - 1, m = 0;
+	int l = 0, r = nums.size() - 1, m = 0; // to find left bound
 		while (r - l > 1) {
 		m = l + (r - l) / 2;
 		if (nums[m] < target) l = m;
@@ -19,7 +19,7 @@ std::vector<int> searchRange(std::vector<int>& nums, int target) {
 	if (nums[r] == target) res[0] = r;
 	if (nums[l] == target) res[0] = l;
 
-	l = 0, r = nums.size() - 1, m = 0;
+	l = 0, r = nums.size() - 1, m = 0; // to find right bound
 		while (r - l > 1) {
 		m = l + (r - l) / 2;
 		if (nums[m] <= target) l = m;

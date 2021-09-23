@@ -71,5 +71,8 @@
     <ClInclude Include="SearchForRange.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FindClosestElements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
