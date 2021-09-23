@@ -14,6 +14,7 @@ int search(std::vector<int>& nums, int target) {
 			l = m;
 		else {
 			r = m;
+
 		}
 	}
 

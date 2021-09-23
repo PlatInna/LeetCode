@@ -57,8 +57,8 @@ void Test_3() {
 
 void Test_4() {
     int target = 2, k = 4;
-    std::vector<int> expected = { 1,1,1,3};
-    std::vector<int> v = { 0,1,1,1,3,4,4,4};
+    std::vector<int> expected = { 0,1,1,3};
+    std::vector<int> v = { 0,0,1,1,3,4,4,4};
     ASSERT_EQUAL(findClosestElements(v, k, target), expected);
 }
 
@@ -75,25 +75,28 @@ void Test_6() {
     std::vector<int> v = { 0,1,1,1,3,3,3,3,4,4 };
     ASSERT_EQUAL(findClosestElements(v, k, target), expected);
 }
-/*
+
 void Test_7() {
-    auto expected = 0;
-    std::vector<int> v = { 3,4,0,1,2 };
-    ASSERT_EQUAL(findMin(v), expected);
+    int target = 2, k = 8;
+    std::vector<int> expected = { -1,0,1,1,1,3,3,8 };
+    std::vector<int> v = { -10,-1,0,1,1,1,3,3,8,8,9 };
+    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
 }
 
 void Test_8() {
-    auto expected = 0;
-    std::vector<int> v = { 3,0,1,2 };
-    ASSERT_EQUAL(findMin(v), expected);
+    int target = 2, k = 8;
+    std::vector<int> expected = { -2,-1,0,1,1,1,3,3 };
+    std::vector<int> v = { -4,-2,-1,0,1,1,1,3,3,8,8,9 };
+    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
 }
 
 void Test_9() {
-    auto expected = 0;
-    std::vector<int> v = { 2,0,1};
-    ASSERT_EQUAL(findMin(v), expected);
+    int target = 2, k = 8;
+    std::vector<int> expected = { 0,1,1,1,3,3,8,8 };
+    std::vector<int> v = { 0,1,1,1,3,3,8,8,9 };
+    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
 }
-*/
+
 
 int main() {
     LOG_DURATION("Total duration");
@@ -101,16 +104,16 @@ int main() {
     TestRunner tr;
     {
         LOG_DURATION("duration");
-        //RUN_TEST(tr, Test_0);
-        //RUN_TEST(tr, Test_1);
-        //RUN_TEST(tr, Test_2);
-        //RUN_TEST(tr, Test_3);
-        //RUN_TEST(tr, Test_4);
-        //RUN_TEST(tr, Test_5);
+        RUN_TEST(tr, Test_0);
+        RUN_TEST(tr, Test_1);
+        RUN_TEST(tr, Test_2);
+        RUN_TEST(tr, Test_3);
+        RUN_TEST(tr, Test_4);
+        RUN_TEST(tr, Test_5);
         RUN_TEST(tr, Test_6);
-        //RUN_TEST(tr, Test_7);
-        //RUN_TEST(tr, Test_8);
-        //RUN_TEST(tr, Test_9);
+        RUN_TEST(tr, Test_7);
+        RUN_TEST(tr, Test_8);
+        RUN_TEST(tr, Test_9);
     }    
 
     return 0;
