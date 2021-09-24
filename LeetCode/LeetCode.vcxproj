@@ -157,6 +157,7 @@
     <ClInclude Include="minRefuelStops.h" />
     <ClInclude Include="mySqrt.h" />
     <ClInclude Include="palindromePairs.h" />
+    <ClInclude Include="PerfectSquare.h" />
     <ClInclude Include="profile.h" />
     <ClInclude Include="rangeSumQuery.h" />
     <ClInclude Include="RotatedSortedArray.h" />

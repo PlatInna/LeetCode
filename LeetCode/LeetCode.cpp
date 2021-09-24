@@ -23,78 +23,79 @@
 //#include "FindMinInRotatedSortedArray.h"
 //#include "SearchForRange.h"
 //#include "FindClosestElements.h"
-#include "FindClosestElements.h"
+//#include "FindClosestElements.h"
+#include "PerfectSquare.h"
 
 using namespace std;
 
 void Test_0() {
-    int target = -1, k = 6;
-    std::vector<int> expected = { 0,1,1,1,3,4 };
-    std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 16;
+    auto expected = true;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 void Test_1() {
-    int target = 10, k = 6;
-    std::vector<int> expected = { 1,1,1,3,4,4 };
-    std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 15;
+    auto expected = false;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 void Test_2() {
-    int target = 10, k = 1;
-    std::vector<int> expected = {0};
-    std::vector<int> v = {0};
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 17;
+    auto expected = false;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 void Test_3() {
-    int target = 3, k = 4;
-    std::vector<int> expected = { 1,3,4,4};
-    std::vector<int> v = { 0,1,1,1,3,4,4 };
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 4;
+    auto expected = true;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 void Test_4() {
-    int target = 2, k = 4;
-    std::vector<int> expected = { 0,1,1,3};
-    std::vector<int> v = { 0,0,1,1,3,4,4,4};
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 9;
+    auto expected = true;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 void Test_5() {
-    int target = 4, k = 4;
-    std::vector<int> expected = { 1,3,4,4 };
-    std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 25;
+    auto expected = true;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 void Test_6() {
-    int target = 3, k = 5;
-    std::vector<int> expected = { 3,3,3,3,4 };
-    std::vector<int> v = { 0,1,1,1,3,3,3,3,4,4 };
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 36;
+    auto expected = true;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 void Test_7() {
-    int target = 2, k = 8;
-    std::vector<int> expected = { -1,0,1,1,1,3,3,8 };
-    std::vector<int> v = { -10,-1,0,1,1,1,3,3,8,8,9 };
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 49;
+    auto expected = true;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 void Test_8() {
-    int target = 2, k = 8;
-    std::vector<int> expected = { -2,-1,0,1,1,1,3,3 };
-    std::vector<int> v = { -4,-2,-1,0,1,1,1,3,3,8,8,9 };
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 64;
+    auto expected = true;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 void Test_9() {
-    int target = 2, k = 8;
-    std::vector<int> expected = { 0,1,1,1,3,3,8,8 };
-    std::vector<int> v = { 0,1,1,1,3,3,8,8,9 };
-    ASSERT_EQUAL(findClosestElements(v, k, target), expected);
+    int target = 81;
+    auto expected = true;
+    //std::vector<int> v = { 0,1,1,1,3,4,4};
+    ASSERT_EQUAL(isPerfectSquare(target), expected);
 }
 
 
