@@ -77,5 +77,8 @@
     <ClInclude Include="PerfectSquare.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="NextGreatestLetter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

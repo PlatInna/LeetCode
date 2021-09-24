@@ -24,80 +24,152 @@
 //#include "SearchForRange.h"
 //#include "FindClosestElements.h"
 //#include "FindClosestElements.h"
-#include "PerfectSquare.h"
+//#include "PerfectSquare.h"
+#include "NextGreatestLetter.h"
 
 using namespace std;
 
 void Test_0() {
-    int target = 16;
-    auto expected = true;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'a';
+    auto expected = 'c';
+    std::vector<char> v = {'c','e'};
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
 void Test_1() {
-    int target = 15;
-    auto expected = false;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'b';
+    auto expected = 'c';
+    std::vector<char> v = {'c','e'};
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
 void Test_2() {
-    int target = 17;
-    auto expected = false;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'c';
+    auto expected = 'e';
+    std::vector<char> v = {'c','e'};
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
 void Test_3() {
-    int target = 4;
-    auto expected = true;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'd';
+    auto expected = 'e';
+    std::vector<char> v = { 'c','e' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
 void Test_4() {
-    int target = 9;
-    auto expected = true;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'e';
+    auto expected = 'c';
+    std::vector<char> v = { 'c','e' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
 void Test_5() {
-    int target = 25;
-    auto expected = true;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'f';
+    auto expected = 'c';
+    std::vector<char> v = { 'c','e' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
 void Test_6() {
-    int target = 36;
-    auto expected = true;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'g';
+    auto expected = 'c';
+    std::vector<char> v = { 'c','e' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
 void Test_7() {
-    int target = 49;
-    auto expected = true;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'z';
+    auto expected = 'c';
+    std::vector<char> v = { 'c','e' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
 void Test_8() {
-    int target = 64;
-    auto expected = true;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'f';
+    auto expected = 'g';
+    std::vector<char> v = { 'c','e','f','g' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
 void Test_9() {
-    int target = 81;
-    auto expected = true;
-    //std::vector<int> v = { 0,1,1,1,3,4,4};
-    ASSERT_EQUAL(isPerfectSquare(target), expected);
+    char target = 'g';
+    auto expected = 'c';
+    std::vector<char> v = { 'c','e','f','g' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
+void Test_10() {
+    char target = 'd';
+    auto expected = 'e';
+    std::vector<char> v = { 'c','e','f','g' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+void Test_11() {
+    char target = 'b';
+    auto expected = 'c';
+    std::vector<char> v = { 'c','e','f','g' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+void Test_12() {
+    char target = 'j';
+    auto expected = 'c';
+    std::vector<char> v = { 'c','e','f','g' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+void Test_13() {
+    char target = 'a';
+    auto expected = 'c';
+    std::vector<char> v = { 'c','e','f','g' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+void Test_14() {
+    char target = 'z';
+    auto expected = 'c';
+    std::vector<char> v = { 'c','e','f','g' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+void Test_15() {
+    char target = 'e';
+    auto expected = 'f';
+    std::vector<char> v = { 'c','e','e','e','e','f','f','f','g','g','g','y' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+void Test_16() {
+    char target = 'f';
+    auto expected = 'g';
+    std::vector<char> v = { 'c','e','e','e','e','f','f','f','g','g','g','y'};
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+void Test_17() {
+    char target = 'd';
+    auto expected = 'e';
+    std::vector<char> v = { 'c','e','e','e','e','f','f','f','g','g','g','g','g','y' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+void Test_18() {
+    char target = 'd';
+    auto expected = 'e';
+    std::vector<char> v = { 'c','e','e','e','e','f','f','f','g','g','g','g','g','y' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+void Test_19() {
+    char target = 'g';
+    auto expected = 'j';
+    std::vector<char> v = { 'c','f','j' };
+    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+}
+
+//*/
 
 int main() {
     LOG_DURATION("Total duration");
@@ -115,6 +187,16 @@ int main() {
         RUN_TEST(tr, Test_7);
         RUN_TEST(tr, Test_8);
         RUN_TEST(tr, Test_9);
+        RUN_TEST(tr, Test_10);
+        RUN_TEST(tr, Test_11);
+        RUN_TEST(tr, Test_12);
+        RUN_TEST(tr, Test_13);
+        RUN_TEST(tr, Test_14);
+        RUN_TEST(tr, Test_15);
+        RUN_TEST(tr, Test_16);
+        RUN_TEST(tr, Test_17);
+        RUN_TEST(tr, Test_18);
+        RUN_TEST(tr, Test_19);
     }    
 
     return 0;
