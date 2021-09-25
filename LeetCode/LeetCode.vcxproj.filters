@@ -80,5 +80,8 @@
     <ClInclude Include="NextGreatestLetter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MyPow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

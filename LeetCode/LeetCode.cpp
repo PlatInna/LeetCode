@@ -25,45 +25,51 @@
 //#include "FindClosestElements.h"
 //#include "FindClosestElements.h"
 //#include "PerfectSquare.h"
-#include "NextGreatestLetter.h"
+//#include "NextGreatestLetter.h"
+#include "MyPow.h"
 
 using namespace std;
 
 void Test_0() {
-    char target = 'a';
-    auto expected = 'c';
-    std::vector<char> v = {'c','e'};
-    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+    double target = -2;
+    int n = 0;
+    double expected = 1;
+    //std::vector<char> v = {'c','e'};
+    ASSERT_EQUAL(myPow(target, n), expected);
 }
 
 void Test_1() {
-    char target = 'b';
-    auto expected = 'c';
-    std::vector<char> v = {'c','e'};
-    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+    double target = -2;
+    int n = 1;
+    double expected = -2;
+    //std::vector<char> v = {'c','e'};
+    ASSERT_EQUAL(myPow(target, n), expected);
 }
 
 void Test_2() {
-    char target = 'c';
-    auto expected = 'e';
-    std::vector<char> v = {'c','e'};
-    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+    double target = -2;
+    int n = 2;
+    double expected = 4;
+    //std::vector<char> v = {'c','e'};
+    ASSERT_EQUAL(myPow(target, n), expected);
 }
 
 void Test_3() {
-    char target = 'd';
-    auto expected = 'e';
-    std::vector<char> v = { 'c','e' };
-    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+    double target = -2;
+    int n = -1;
+    double expected = -0.5;
+    //std::vector<char> v = {'c','e'};
+    ASSERT_EQUAL(myPow(target, n), expected);
 }
 
 void Test_4() {
-    char target = 'e';
-    auto expected = 'c';
-    std::vector<char> v = { 'c','e' };
-    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+    double target = -2;
+    int n = -2;
+    double expected = 0.25;
+    //std::vector<char> v = {'c','e'};
+    ASSERT_EQUAL(myPow(target, n), expected);
 }
-
+/*
 void Test_5() {
     char target = 'f';
     auto expected = 'c';
@@ -169,7 +175,7 @@ void Test_19() {
     ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
 
-//*/
+*/
 
 int main() {
     LOG_DURATION("Total duration");
@@ -182,21 +188,21 @@ int main() {
         RUN_TEST(tr, Test_2);
         RUN_TEST(tr, Test_3);
         RUN_TEST(tr, Test_4);
-        RUN_TEST(tr, Test_5);
-        RUN_TEST(tr, Test_6);
-        RUN_TEST(tr, Test_7);
-        RUN_TEST(tr, Test_8);
-        RUN_TEST(tr, Test_9);
-        RUN_TEST(tr, Test_10);
-        RUN_TEST(tr, Test_11);
-        RUN_TEST(tr, Test_12);
-        RUN_TEST(tr, Test_13);
-        RUN_TEST(tr, Test_14);
-        RUN_TEST(tr, Test_15);
-        RUN_TEST(tr, Test_16);
-        RUN_TEST(tr, Test_17);
-        RUN_TEST(tr, Test_18);
-        RUN_TEST(tr, Test_19);
+        //RUN_TEST(tr, Test_5);
+        //RUN_TEST(tr, Test_6);
+        //RUN_TEST(tr, Test_7);
+        //RUN_TEST(tr, Test_8);
+        //RUN_TEST(tr, Test_9);
+        //RUN_TEST(tr, Test_10);
+        //RUN_TEST(tr, Test_11);
+        //RUN_TEST(tr, Test_12);
+        //RUN_TEST(tr, Test_13);
+        //RUN_TEST(tr, Test_14);
+        //RUN_TEST(tr, Test_15);
+        //RUN_TEST(tr, Test_16);
+        //RUN_TEST(tr, Test_17);
+        //RUN_TEST(tr, Test_18);
+        //RUN_TEST(tr, Test_19);
     }    
 
     return 0;

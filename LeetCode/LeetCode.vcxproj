@@ -155,6 +155,7 @@
     <ClInclude Include="kInversePairs.h" />
     <ClInclude Include="maximumUnits.h" />
     <ClInclude Include="minRefuelStops.h" />
+    <ClInclude Include="MyPow.h" />
     <ClInclude Include="mySqrt.h" />
     <ClInclude Include="NextGreatestLetter.h" />
     <ClInclude Include="palindromePairs.h" />
