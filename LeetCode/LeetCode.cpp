@@ -27,66 +27,75 @@
 //#include "PerfectSquare.h"
 //#include "NextGreatestLetter.h"
 //#include "MyPow.h"
-#include "FindMinInRotatedSortedArray2.h"
+//#include "FindMinInRotatedSortedArray2.h"
+#include "IntersectionTwoArrays.h"
 
 using namespace std;
 
 void Test_0() {
     //double target = -2;
     //int n = 0;
-    auto expected = 1;
-    std::vector<int> v = {1,2};
-    ASSERT_EQUAL(findMin(v), expected);
+    std::vector<int> expected = { 1,2 };
+    std::vector<int> v1 = { 1,2 };
+    std::vector<int> v2 = { 1,2 };
+    ASSERT_EQUAL(intersection(v1, v2), expected);
 }
 
 void Test_1() {
-    auto expected = 1;
-    std::vector<int> v = {2,1};
-    ASSERT_EQUAL(findMin(v), expected);
+    std::vector<int> expected = { };
+    std::vector<int> v1 = { 1 };
+    std::vector<int> v2 = { 2 };
+    ASSERT_EQUAL(intersection(v1, v2), expected);
 }
 
 void Test_2() {
-    auto expected = -1;
-    std::vector<int> v = {-1,1,2,2,2,3};
-    ASSERT_EQUAL(findMin(v), expected);
+    std::vector<int> expected = { };
+    std::vector<int> v1 = { };
+    std::vector<int> v2 = { 1,2 };
+    ASSERT_EQUAL(intersection(v1, v2), expected);
 }
 
 void Test_3() {
-  auto expected = -1;
-    std::vector<int> v = {3,-1,1,2,2,2,3};
-    ASSERT_EQUAL(findMin(v), expected);
+    std::vector<int> expected = { };
+    std::vector<int> v1 = { 1,2 };
+    std::vector<int> v2 = { };
+    ASSERT_EQUAL(intersection(v1, v2), expected);
 }
 
 void Test_4() {
-   auto expected = -1;
-    std::vector<int> v = {3,-1,1,2,2,2};
-    ASSERT_EQUAL(findMin(v), expected);
+    std::vector<int> expected = { };
+    std::vector<int> v1 = { 1,2 };
+    std::vector<int> v2 = { 4,3 };
+    ASSERT_EQUAL(intersection(v1, v2), expected);
 }
 
 void Test_5() {
-    auto expected = -1;
-    std::vector<int> v = {2,3,-1,1,2,2,2};
-    ASSERT_EQUAL(findMin(v), expected);
+    std::vector<int> expected = { -1,2 };
+    std::vector<int> v1 = { 1,2,3,-1,8 };
+    std::vector<int> v2 = { 0, -4, -1, 2};
+    ASSERT_EQUAL(intersection(v1, v2), expected);
 }
 
 void Test_6() {
-    auto expected = -1;
-    std::vector<int> v = {2,3,-1,1};
-    ASSERT_EQUAL(findMin(v), expected);
+    std::vector<int> expected = { -9,2,7 };
+    std::vector<int> v1 = { 1,2,2,2,2,2,2,2,-1,-1,-1,-9,777,7 };
+    std::vector<int> v2 = { 2,2,2,2,2,2,2,0,-9,7,7,7,4,-2,2,2,-3,0,0 };
+    ASSERT_EQUAL(intersection(v1, v2), expected);
 }
 
 void Test_7() {
-    auto expected = -1;
-    std::vector<int> v = {2,2,2,-1,1,2,2};
-    ASSERT_EQUAL(findMin(v), expected);
+    std::vector<int> expected = { 1 };
+    std::vector<int> v1 = { 1 };
+    std::vector<int> v2 = { 1 };
+    ASSERT_EQUAL(intersection(v1, v2), expected);
 }
-
+/*
 void Test_8() {
     auto expected = -1;
     std::vector<int> v = {2,2,3,-1,1,2,2};
     ASSERT_EQUAL(findMin(v), expected);
 }
-/*
+
 void Test_9() {
     char target = 'g';
     auto expected = 'c';
@@ -179,7 +188,7 @@ int main() {
         RUN_TEST(tr, Test_5);
         RUN_TEST(tr, Test_6);
         RUN_TEST(tr, Test_7);
-        RUN_TEST(tr, Test_8);
+        //RUN_TEST(tr, Test_8);
         //RUN_TEST(tr, Test_9);
         //RUN_TEST(tr, Test_10);
         //RUN_TEST(tr, Test_11);

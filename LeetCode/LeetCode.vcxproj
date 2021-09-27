@@ -152,6 +152,7 @@
     <ClInclude Include="FirstBadVersion.h" />
     <ClInclude Include="generateParenthesis.h" />
     <ClInclude Include="guessNumber.h" />
+    <ClInclude Include="IntersectionTwoArrays.h" />
     <ClInclude Include="isSumEqual.h" />
     <ClInclude Include="kInversePairs.h" />
     <ClInclude Include="maximumUnits.h" />
