@@ -26,78 +26,67 @@
 //#include "FindClosestElements.h"
 //#include "PerfectSquare.h"
 //#include "NextGreatestLetter.h"
-#include "MyPow.h"
+//#include "MyPow.h"
+#include "FindMinInRotatedSortedArray2.h"
 
 using namespace std;
 
 void Test_0() {
-    double target = -2;
-    int n = 0;
-    double expected = 1;
-    //std::vector<char> v = {'c','e'};
-    ASSERT_EQUAL(myPow(target, n), expected);
+    //double target = -2;
+    //int n = 0;
+    auto expected = 1;
+    std::vector<int> v = {1,2};
+    ASSERT_EQUAL(findMin(v), expected);
 }
 
 void Test_1() {
-    double target = -2;
-    int n = 1;
-    double expected = -2;
-    //std::vector<char> v = {'c','e'};
-    ASSERT_EQUAL(myPow(target, n), expected);
+    auto expected = 1;
+    std::vector<int> v = {2,1};
+    ASSERT_EQUAL(findMin(v), expected);
 }
 
 void Test_2() {
-    double target = -2;
-    int n = 2;
-    double expected = 4;
-    //std::vector<char> v = {'c','e'};
-    ASSERT_EQUAL(myPow(target, n), expected);
+    auto expected = -1;
+    std::vector<int> v = {-1,1,2,2,2,3};
+    ASSERT_EQUAL(findMin(v), expected);
 }
 
 void Test_3() {
-    double target = -2;
-    int n = -1;
-    double expected = -0.5;
-    //std::vector<char> v = {'c','e'};
-    ASSERT_EQUAL(myPow(target, n), expected);
+  auto expected = -1;
+    std::vector<int> v = {3,-1,1,2,2,2,3};
+    ASSERT_EQUAL(findMin(v), expected);
 }
 
 void Test_4() {
-    double target = -2;
-    int n = -2;
-    double expected = 0.25;
-    //std::vector<char> v = {'c','e'};
-    ASSERT_EQUAL(myPow(target, n), expected);
+   auto expected = -1;
+    std::vector<int> v = {3,-1,1,2,2,2};
+    ASSERT_EQUAL(findMin(v), expected);
 }
-/*
+
 void Test_5() {
-    char target = 'f';
-    auto expected = 'c';
-    std::vector<char> v = { 'c','e' };
-    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+    auto expected = -1;
+    std::vector<int> v = {2,3,-1,1,2,2,2};
+    ASSERT_EQUAL(findMin(v), expected);
 }
 
 void Test_6() {
-    char target = 'g';
-    auto expected = 'c';
-    std::vector<char> v = { 'c','e' };
-    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+    auto expected = -1;
+    std::vector<int> v = {2,3,-1,1};
+    ASSERT_EQUAL(findMin(v), expected);
 }
 
 void Test_7() {
-    char target = 'z';
-    auto expected = 'c';
-    std::vector<char> v = { 'c','e' };
-    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+    auto expected = -1;
+    std::vector<int> v = {2,2,2,-1,1,2,2};
+    ASSERT_EQUAL(findMin(v), expected);
 }
 
 void Test_8() {
-    char target = 'f';
-    auto expected = 'g';
-    std::vector<char> v = { 'c','e','f','g' };
-    ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
+    auto expected = -1;
+    std::vector<int> v = {2,2,3,-1,1,2,2};
+    ASSERT_EQUAL(findMin(v), expected);
 }
-
+/*
 void Test_9() {
     char target = 'g';
     auto expected = 'c';
@@ -174,7 +163,6 @@ void Test_19() {
     std::vector<char> v = { 'c','f','j' };
     ASSERT_EQUAL(nextGreatestLetter(v, target), expected);
 }
-
 */
 
 int main() {
@@ -188,10 +176,10 @@ int main() {
         RUN_TEST(tr, Test_2);
         RUN_TEST(tr, Test_3);
         RUN_TEST(tr, Test_4);
-        //RUN_TEST(tr, Test_5);
-        //RUN_TEST(tr, Test_6);
-        //RUN_TEST(tr, Test_7);
-        //RUN_TEST(tr, Test_8);
+        RUN_TEST(tr, Test_5);
+        RUN_TEST(tr, Test_6);
+        RUN_TEST(tr, Test_7);
+        RUN_TEST(tr, Test_8);
         //RUN_TEST(tr, Test_9);
         //RUN_TEST(tr, Test_10);
         //RUN_TEST(tr, Test_11);

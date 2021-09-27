@@ -147,6 +147,7 @@
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="FindClosestElements.h" />
     <ClInclude Include="FindMinInRotatedSortedArray.h" />
+    <ClInclude Include="FindMinInRotatedSortedArray2.h" />
     <ClInclude Include="FindPeakElement.h" />
     <ClInclude Include="FirstBadVersion.h" />
     <ClInclude Include="generateParenthesis.h" />

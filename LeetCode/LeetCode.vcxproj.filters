@@ -83,5 +83,8 @@
     <ClInclude Include="MyPow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FindMinInRotatedSortedArray2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
