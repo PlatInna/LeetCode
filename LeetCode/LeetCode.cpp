@@ -77,9 +77,9 @@ void Test_5() {
 }
 
 void Test_6() {
-    std::vector<int> expected = { -9,2,7 };
-    std::vector<int> v1 = { 1,2,2,2,2,2,2,2,-1,-1,-1,-9,777,7 };
-    std::vector<int> v2 = { 2,2,2,2,2,2,2,0,-9,7,7,7,4,-2,2,2,-3,0,0 };
+    std::vector<int> expected = { -9,-9,2,2,2,2,2,2,7 };
+    std::vector<int> v1 = { 1,2,2,2,-9,2,2,2,2,-1,-1,-1,-9,777,7 };
+    std::vector<int> v2 = { 2,2,2,2,0,-9,-9,-9,7,7,7,4,-2,2,2,-3,0,0 };
     ASSERT_EQUAL(intersection(v1, v2), expected);
 }
 
