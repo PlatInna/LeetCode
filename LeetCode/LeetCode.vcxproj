@@ -167,6 +167,7 @@
     <ClInclude Include="RotatedSortedArray.h" />
     <ClInclude Include="SearchForRange.h" />
     <ClInclude Include="test_runner.h" />
+    <ClInclude Include="TwoSum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

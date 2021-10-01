@@ -89,5 +89,8 @@
     <ClInclude Include="IntersectionTwoArrays.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TwoSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

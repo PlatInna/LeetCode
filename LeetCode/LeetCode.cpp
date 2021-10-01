@@ -28,54 +28,53 @@
 //#include "NextGreatestLetter.h"
 //#include "MyPow.h"
 //#include "FindMinInRotatedSortedArray2.h"
-#include "IntersectionTwoArrays.h"
+//#include "IntersectionTwoArrays.h"
+#include "TwoSum.h"
 
 using namespace std;
 
 void Test_0() {
-    //double target = -2;
-    //int n = 0;
+    int target = 3;
     std::vector<int> expected = { 1,2 };
-    std::vector<int> v1 = { 1,2 };
-    std::vector<int> v2 = { 1,2 };
-    ASSERT_EQUAL(intersection(v1, v2), expected);
+    std::vector<int> v = { 1,2 };
+    ASSERT_EQUAL(twoSum(v, target), expected);
 }
 
 void Test_1() {
-    std::vector<int> expected = { };
-    std::vector<int> v1 = { 1 };
-    std::vector<int> v2 = { 2 };
-    ASSERT_EQUAL(intersection(v1, v2), expected);
+    int target = 5;
+    std::vector<int> expected = { 1,7 };
+    std::vector<int> v = { 1,2,2,2,2,2,4 };
+    ASSERT_EQUAL(twoSum(v, target), expected);
 }
 
 void Test_2() {
-    std::vector<int> expected = { };
-    std::vector<int> v1 = { };
-    std::vector<int> v2 = { 1,2 };
-    ASSERT_EQUAL(intersection(v1, v2), expected);
+    int target = 5;
+    std::vector<int> expected = { 1,7 };
+    std::vector<int> v = { 1,2,2,2,2,2,4,5,8,100 };
+    ASSERT_EQUAL(twoSum(v, target), expected);
 }
 
 void Test_3() {
-    std::vector<int> expected = { };
-    std::vector<int> v1 = { 1,2 };
-    std::vector<int> v2 = { };
-    ASSERT_EQUAL(intersection(v1, v2), expected);
+    int target = -3;
+    std::vector<int> expected = { 1,2 };
+    std::vector<int> v = { -2,-1,0,1,2,2,2,2,2,3,4,4,4,5,8,100 };
+    ASSERT_EQUAL(twoSum(v, target), expected);
 }
 
 void Test_4() {
-    std::vector<int> expected = { };
-    std::vector<int> v1 = { 1,2 };
-    std::vector<int> v2 = { 4,3 };
-    ASSERT_EQUAL(intersection(v1, v2), expected);
+    int target = 4;
+    std::vector<int> expected = { 3,4 };
+    std::vector<int> v = { -2,0,2,2,3,4,4,4,5,8,100 };
+    ASSERT_EQUAL(twoSum(v, target), expected);
 }
 
 void Test_5() {
-    std::vector<int> expected = { -1,2 };
-    std::vector<int> v1 = { 1,2,3,-1,8 };
-    std::vector<int> v2 = { 0, -4, -1, 2};
-    ASSERT_EQUAL(intersection(v1, v2), expected);
+    int target = 6;
+    std::vector<int> expected = { 1,3 };
+    std::vector<int> v = { 2,3,4 };
+    ASSERT_EQUAL(twoSum(v, target), expected);
 }
-
+/*
 void Test_6() {
     std::vector<int> expected = { -9,-9,2,2,2,2,2,2,7 };
     std::vector<int> v1 = { 1,2,2,2,-9,2,2,2,2,-1,-1,-1,-9,777,7 };
@@ -89,7 +88,7 @@ void Test_7() {
     std::vector<int> v2 = { 1 };
     ASSERT_EQUAL(intersection(v1, v2), expected);
 }
-/*
+
 void Test_8() {
     auto expected = -1;
     std::vector<int> v = {2,2,3,-1,1,2,2};
@@ -175,6 +174,7 @@ void Test_19() {
 */
 
 int main() {
+
     LOG_DURATION("Total duration");
 
     TestRunner tr;
@@ -186,8 +186,8 @@ int main() {
         RUN_TEST(tr, Test_3);
         RUN_TEST(tr, Test_4);
         RUN_TEST(tr, Test_5);
-        RUN_TEST(tr, Test_6);
-        RUN_TEST(tr, Test_7);
+        //RUN_TEST(tr, Test_6);
+        //RUN_TEST(tr, Test_7);
         //RUN_TEST(tr, Test_8);
         //RUN_TEST(tr, Test_9);
         //RUN_TEST(tr, Test_10);
