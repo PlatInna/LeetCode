@@ -14,7 +14,7 @@
 //#include "generateParenthesis.h"
 //#include "rangeSumQuery.h"
 //#include "kInversePairs.h"
-#include "BinarySearch.h"
+//#include "BinarySearch.h"
 //#include "mySqrt.h"
 //#include "guessNumber.h"
 //#include "RotatedSortedArray.h"
@@ -30,6 +30,7 @@
 //#include "FindMinInRotatedSortedArray2.h"
 //#include "IntersectionTwoArrays.h"
 //#include "TwoSum.h"
+#include "FindDuplicate.h"
 
 using namespace std;
 /*
@@ -174,23 +175,9 @@ void Test_19() {
 */
 
 int main() {
-    std::vector<int> targets = { -4,0,2,3,4,7,23 };
-    std::vector<int> arr = { 0,0,1,1,3,4,4,7,7,7 };
-    cout << " -4   [ ";
-    for (auto el : arr) {
-        cout << el << " ";
-    }
-    cout << "]   23" << endl;
-    cout << "        ";
-    for (int i = 0; i < arr.size(); i++) {
-        cout << i << " ";
-    }
-    cout << endl << endl;
-    for(auto target : targets){
-        leftsideBinarySearch(arr, target);
-        rightsideBinarySearch(arr, target);
-        cout << endl;
-    }
+    std::vector<int> v = { 4,6,4,2,1,4,3,5 };
+    cout << findDuplicate(v) << endl;
+
     
     LOG_DURATION("Total duration");
 
