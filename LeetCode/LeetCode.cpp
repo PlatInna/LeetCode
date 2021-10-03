@@ -14,7 +14,7 @@
 //#include "generateParenthesis.h"
 //#include "rangeSumQuery.h"
 //#include "kInversePairs.h"
-//#include "BinarySearch.h"
+#include "BinarySearch.h"
 //#include "mySqrt.h"
 //#include "guessNumber.h"
 //#include "RotatedSortedArray.h"
@@ -29,10 +29,10 @@
 //#include "MyPow.h"
 //#include "FindMinInRotatedSortedArray2.h"
 //#include "IntersectionTwoArrays.h"
-#include "TwoSum.h"
+//#include "TwoSum.h"
 
 using namespace std;
-
+/*
 void Test_0() {
     int target = 3;
     std::vector<int> expected = { 1,2 };
@@ -74,7 +74,7 @@ void Test_5() {
     std::vector<int> v = { 2,3,4 };
     ASSERT_EQUAL(twoSum(v, target), expected);
 }
-/*
+
 void Test_6() {
     std::vector<int> expected = { -9,-9,2,2,2,2,2,2,7 };
     std::vector<int> v1 = { 1,2,2,2,-9,2,2,2,2,-1,-1,-1,-9,777,7 };
@@ -174,18 +174,35 @@ void Test_19() {
 */
 
 int main() {
-
+    std::vector<int> targets = { -4,0,2,3,4,7,23 };
+    std::vector<int> arr = { 0,0,1,1,3,4,4,7,7,7 };
+    cout << " -4   [ ";
+    for (auto el : arr) {
+        cout << el << " ";
+    }
+    cout << "]   23" << endl;
+    cout << "        ";
+    for (int i = 0; i < arr.size(); i++) {
+        cout << i << " ";
+    }
+    cout << endl << endl;
+    for(auto target : targets){
+        leftsideBinarySearch(arr, target);
+        rightsideBinarySearch(arr, target);
+        cout << endl;
+    }
+    
     LOG_DURATION("Total duration");
 
     TestRunner tr;
     {
         LOG_DURATION("duration");
-        RUN_TEST(tr, Test_0);
-        RUN_TEST(tr, Test_1);
-        RUN_TEST(tr, Test_2);
-        RUN_TEST(tr, Test_3);
-        RUN_TEST(tr, Test_4);
-        RUN_TEST(tr, Test_5);
+        //RUN_TEST(tr, Test_0);
+        //RUN_TEST(tr, Test_1);
+        //RUN_TEST(tr, Test_2);
+        //RUN_TEST(tr, Test_3);
+        //RUN_TEST(tr, Test_4);
+        //RUN_TEST(tr, Test_5);
         //RUN_TEST(tr, Test_6);
         //RUN_TEST(tr, Test_7);
         //RUN_TEST(tr, Test_8);

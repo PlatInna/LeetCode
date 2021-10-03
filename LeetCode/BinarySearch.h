@@ -1,6 +1,56 @@
 #pragma once
 #include <vector>
 
+bool RSBS(int mid, int target) {
+	return mid <= target;
+}
+
+bool LSBS(int mid, int target) {
+	return mid < target;
+}
+
+void rightsideBinarySearch(const std::vector<int>& v, int target) {
+	int lo = 0, hi = v.size() - 1, mid = 0;
+	while (hi - lo > 1) {
+		mid = lo + (hi - lo) / 2;
+		if (v[mid] <= target)
+			lo = mid;
+		else
+			hi = mid;
+	}
+	std::cout << " target = " << target << '\t' << "RSBS: lo = " << lo << '\t' << "mid = " << mid << '\t' << "hi = " << hi << '\n';
+
+	//return r;
+
+	/*if (v[hi] == target) {
+		return hi;
+		std::cout << "=============================================" << endl;
+	}
+	else return lo;
+	*/
+}
+
+void leftsideBinarySearch(const std::vector<int>& v, int target) {
+	int lo = 0, hi = v.size() - 1, mid = 0;
+	while (hi - lo > 1) {
+		mid = lo + (hi - lo) / 2;
+		if (v[mid] < target)
+			lo = mid;
+		else
+			hi = mid;
+	}
+	std::cout << " target = " << target << '\t' << "LSBS: lo = " << lo << '\t' << "mid = " << mid << '\t' << "hi = " << hi << '\n';
+
+	//return l;
+	/*
+	if (v[lo] == target) {
+		return lo;
+		std::cout << "=============================================" << endl;
+	}
+	else return hi;
+	*/
+}
+
 int search(std::vector<int>& nums, int target) {
 	int l = 0;
 	int r = nums.size() - 1;
