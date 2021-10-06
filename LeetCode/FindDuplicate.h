@@ -20,7 +20,7 @@ int countMid(int m, std::vector<int>& nums) {
 
 int findDuplicate(std::vector<int>& nums) {
 	// let's see on sorted arr [1,nums] - we can say
-	// for each not duplicate element the count of numbers are less than or equal to it in the given array not more than element itself,
+	// for each not duplicate element the count of numbers are less than or equal to it not more than element itself,
 	// otherwise it is duplicate.
 	int lo = 1, mid = 0, hi = nums.size();
 	int duplicate = 0;

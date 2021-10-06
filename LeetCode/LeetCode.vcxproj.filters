@@ -95,5 +95,8 @@
     <ClInclude Include="FindDuplicate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CountNegatives.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

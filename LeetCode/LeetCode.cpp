@@ -30,7 +30,8 @@
 //#include "FindMinInRotatedSortedArray2.h"
 //#include "IntersectionTwoArrays.h"
 //#include "TwoSum.h"
-#include "FindDuplicate.h"
+//#include "FindDuplicate.h"
+#include "CountNegatives.h"
 
 using namespace std;
 /*
@@ -175,10 +176,12 @@ void Test_19() {
 */
 
 int main() {
-    std::vector<int> v = { 4,6,4,2,1,4,3,5 };
-    cout << findDuplicate(v) << endl;
+    vector<vector<int>> grid0 = { {4, 3, 2, -1} ,{3, 2, 1, -1},{1, 1, -1, -2},{-1, -1, -2, -3} };
+    vector<vector<int>> grid1 = { {3, 2} ,{ 1, 0} };
+    vector<vector<int>> grid2 = { {1,-1} ,{ -1, -1} };
+    vector<vector<int>> grid = { {5,1,0},{-5,-5,-5} };
+    cout << countNegatives(grid) << endl;
 
-    
     LOG_DURATION("Total duration");
 
     TestRunner tr;
