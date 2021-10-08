@@ -31,7 +31,8 @@
 //#include "IntersectionTwoArrays.h"
 //#include "TwoSum.h"
 //#include "FindDuplicate.h"
-#include "CountNegatives.h"
+//#include "CountNegatives.h"
+#include "kWeakestRows.h"
 
 using namespace std;
 /*
@@ -176,11 +177,11 @@ void Test_19() {
 */
 
 int main() {
-    vector<vector<int>> grid0 = { {4, 3, 2, -1} ,{3, 2, 1, -1},{1, 1, -1, -2},{-1, -1, -2, -3} };
-    vector<vector<int>> grid1 = { {3, 2} ,{ 1, 0} };
-    vector<vector<int>> grid2 = { {1,-1} ,{ -1, -1} };
-    vector<vector<int>> grid = { {5,1,0},{-5,-5,-5} };
-    cout << countNegatives(grid) << endl;
+    //vector<vector<int>> grid1 = { {1,1,0,0,0} ,{1,1,1,1,0},{1,0,0,0,0},{1,1,0,0,0},{1,1,1,1,1} };
+    vector<vector<int>> grid = { {1, 1},{ 1, 0},{ 1, 0},{ 1, 1},{ 0, 0},{ 1, 1} };
+    //vector<vector<int>> grid2 = { {1,-1} ,{ -1, -1} };
+    //vector<vector<int>> grid0= { {5,1,0},{-5,-5,-5} };
+    auto v = kWeakestRows(grid, 1);
 
     LOG_DURATION("Total duration");
 

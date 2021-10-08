@@ -157,6 +157,7 @@
     <ClInclude Include="IntersectionTwoArrays.h" />
     <ClInclude Include="isSumEqual.h" />
     <ClInclude Include="kInversePairs.h" />
+    <ClInclude Include="kWeakestRows.h" />
     <ClInclude Include="maximumUnits.h" />
     <ClInclude Include="minRefuelStops.h" />
     <ClInclude Include="MyPow.h" />
