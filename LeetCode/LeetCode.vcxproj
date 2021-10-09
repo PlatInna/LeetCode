@@ -164,6 +164,7 @@
     <ClInclude Include="mySqrt.h" />
     <ClInclude Include="NextGreatestLetter.h" />
     <ClInclude Include="palindromePairs.h" />
+    <ClInclude Include="PeakIndexInMountainArray.h" />
     <ClInclude Include="PerfectSquare.h" />
     <ClInclude Include="profile.h" />
     <ClInclude Include="rangeSumQuery.h" />

@@ -101,5 +101,8 @@
     <ClInclude Include="kWeakestRows.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PeakIndexInMountainArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
