@@ -18,7 +18,7 @@ void rightsideBinarySearch(const std::vector<int>& v, int target) {
 		else
 			hi = mid;
 	}
-	std::cout << " target = " << target << '\t' << "RSBS: lo = " << lo << '\t' << "mid = " << mid << '\t' << "hi = " << hi << '\n';
+	//std::cout << " target = " << target << '\t' << "RSBS: lo = " << lo << '\t' << "mid = " << mid << '\t' << "hi = " << hi << '\n';
 
 	//return r;
 
@@ -39,7 +39,7 @@ void leftsideBinarySearch(const std::vector<int>& v, int target) {
 		else
 			hi = mid;
 	}
-	std::cout << " target = " << target << '\t' << "LSBS: lo = " << lo << '\t' << "mid = " << mid << '\t' << "hi = " << hi << '\n';
+	//std::cout << " target = " << target << '\t' << "LSBS: lo = " << lo << '\t' << "mid = " << mid << '\t' << "hi = " << hi << '\n';
 
 	//return l;
 	/*
