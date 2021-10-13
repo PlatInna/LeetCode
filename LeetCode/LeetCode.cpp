@@ -35,52 +35,54 @@
 //#include "kWeakestRows.h"
 //#include "PeakIndexInMountainArray.h"
 //#include "DistanceBetweenTwoArrays.h"
-#include "SpecialArray.h"
+//#include "SpecialArray.h"
+#include "FairCandySwap.h"
 
 using namespace std;
-/*
+
 void Test_0() {
-    int target = 3;
-    std::vector<int> expected = { 1,2 };
-    std::vector<int> v = { 1,2 };
-    ASSERT_EQUAL(twoSum(v, target), expected);
+    //int target = 3;
+    std::vector<int> expected = { 2,3 };
+    vector<int> alice = { 2 };
+    vector<int> bob = { 1,3 };
+    ASSERT_EQUAL(fairCandySwap(alice, bob), expected);
 }
 
 void Test_1() {
-    int target = 5;
-    std::vector<int> expected = { 1,7 };
-    std::vector<int> v = { 1,2,2,2,2,2,4 };
-    ASSERT_EQUAL(twoSum(v, target), expected);
+    std::vector<int> expected = { 2,1 };
+    vector<int> alice = { 9, 2 };
+    vector<int> bob = { 1,8};
+    ASSERT_EQUAL(fairCandySwap(alice, bob), expected);
 }
 
 void Test_2() {
-    int target = 5;
-    std::vector<int> expected = { 1,7 };
-    std::vector<int> v = { 1,2,2,2,2,2,4,5,8,100 };
-    ASSERT_EQUAL(twoSum(v, target), expected);
+   std::vector<int> expected = { 1,2 };
+    vector<int> alice = { 1,1 };
+    vector<int> bob = { 2,2 };
+    ASSERT_EQUAL(fairCandySwap(alice, bob), expected);
 }
 
 void Test_3() {
-    int target = -3;
     std::vector<int> expected = { 1,2 };
-    std::vector<int> v = { -2,-1,0,1,2,2,2,2,2,3,4,4,4,5,8,100 };
-    ASSERT_EQUAL(twoSum(v, target), expected);
+    vector<int> alice = { 1,2 };
+    vector<int> bob = { 2,3 };
+    ASSERT_EQUAL(fairCandySwap(alice, bob), expected);
 }
 
 void Test_4() {
-    int target = 4;
-    std::vector<int> expected = { 3,4 };
-    std::vector<int> v = { -2,0,2,2,3,4,4,4,5,8,100 };
-    ASSERT_EQUAL(twoSum(v, target), expected);
+    std::vector<int> expected = { 5, 4 };
+    vector<int> alice = { 1,2,5 };
+    vector<int> bob = { 2,4 };
+    ASSERT_EQUAL(fairCandySwap(alice, bob), expected);
 }
 
 void Test_5() {
-    int target = 6;
-    std::vector<int> expected = { 1,3 };
-    std::vector<int> v = { 2,3,4 };
-    ASSERT_EQUAL(twoSum(v, target), expected);
+   std::vector<int> expected = { 3,1 };
+    vector<int> alice = { 3, 2, 1,};
+    vector<int> bob = { 1,1 };
+    ASSERT_EQUAL(fairCandySwap(alice, bob), expected);
 }
-
+/*
 void Test_6() {
     std::vector<int> expected = { -9,-9,2,2,2,2,2,2,7 };
     std::vector<int> v1 = { 1,2,2,2,-9,2,2,2,2,-1,-1,-1,-9,777,7 };
@@ -179,22 +181,20 @@ void Test_19() {
 }
 */
 
+
 int main() {
-    vector<int> v = {1,2,3,4,3,1 };
-   
-    cout << specialArray(v) << endl;
 
     LOG_DURATION("Total duration");
 
     TestRunner tr;
     {
         LOG_DURATION("duration");
-        //RUN_TEST(tr, Test_0);
-        //RUN_TEST(tr, Test_1);
-        //RUN_TEST(tr, Test_2);
-        //RUN_TEST(tr, Test_3);
-        //RUN_TEST(tr, Test_4);
-        //RUN_TEST(tr, Test_5);
+        RUN_TEST(tr, Test_0);
+        RUN_TEST(tr, Test_1);
+        RUN_TEST(tr, Test_2);
+        RUN_TEST(tr, Test_3);
+        RUN_TEST(tr, Test_4);
+        RUN_TEST(tr, Test_5);
         //RUN_TEST(tr, Test_6);
         //RUN_TEST(tr, Test_7);
         //RUN_TEST(tr, Test_8);

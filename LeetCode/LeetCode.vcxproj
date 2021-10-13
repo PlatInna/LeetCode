@@ -147,6 +147,7 @@
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="CountNegatives.h" />
     <ClInclude Include="DistanceBetweenTwoArrays.h" />
+    <ClInclude Include="FairCandySwap.h" />
     <ClInclude Include="FindClosestElements.h" />
     <ClInclude Include="FindDuplicate.h" />
     <ClInclude Include="FindMinInRotatedSortedArray.h" />

@@ -110,5 +110,8 @@
     <ClInclude Include="SpecialArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FairCandySwap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
