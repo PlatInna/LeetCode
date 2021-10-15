@@ -113,5 +113,8 @@
     <ClInclude Include="FairCandySwap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="KthMissingPositiveNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

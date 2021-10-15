@@ -8,7 +8,7 @@
 // Output : 8
 // Explanation : There are 8 negatives number in the matrix.
 
-int countNegatives(vector<vector<int>>& grid) {
+int countNegatives(std::vector<std::vector<int>>& grid) {
 	int counter = 0, lo = 0, mid = 0;
 	int size = grid[0].size(); // to avoid multiple calls of grid.size();
 	int hi = size - 1, negativ_pos = size;
