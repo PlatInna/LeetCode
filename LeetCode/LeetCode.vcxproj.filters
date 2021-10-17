@@ -116,5 +116,8 @@
     <ClInclude Include="KthMissingPositiveNumber.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ArrangingCoins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

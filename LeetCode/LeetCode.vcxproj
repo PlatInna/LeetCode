@@ -144,6 +144,7 @@
     <ClCompile Include="LeetCode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ArrangingCoins.h" />
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="CountNegatives.h" />
     <ClInclude Include="DistanceBetweenTwoArrays.h" />
