@@ -119,5 +119,8 @@
     <ClInclude Include="ArrangingCoins.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SearchInsert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

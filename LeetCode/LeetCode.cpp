@@ -39,6 +39,7 @@
 //#include "FairCandySwap.h"
 //#include "KthMissingPositiveNumber.h"
 //#include "ArrangingCoins.h"
+#include "SearchInsert.h"
 
 using namespace std;
 /*
@@ -183,9 +184,18 @@ void Test_19() {
 }
 */
 
-
-
 int main() {
+
+    vector v = { 1,3,4,5 };
+    cout << searchInsert(v, -1) << endl;
+    cout << searchInsert(v, 0) << endl;
+    cout << searchInsert(v, 1) << endl;
+    cout << searchInsert(v, 2) << endl;
+    cout << searchInsert(v, 3) << endl;
+    cout << searchInsert(v, 4) << endl;
+    cout << searchInsert(v, 5) << endl;
+    cout << searchInsert(v, 6) << endl;
+    cout << searchInsert(v, 7) << endl;
 
     LOG_DURATION("Total duration");
 
