@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="ArrangingCoins.h" />
     <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="CheckIfExist.h" />
     <ClInclude Include="CountNegatives.h" />
     <ClInclude Include="DistanceBetweenTwoArrays.h" />
     <ClInclude Include="FairCandySwap.h" />

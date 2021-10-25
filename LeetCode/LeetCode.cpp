@@ -6,7 +6,7 @@
 
 #include "profile.h"
 #include "test_runner.h"
-
+/*
 //#include "minRefuelStops.h"
 //#include "palindromePairs.h"
 //#include "isSumEqual.h"
@@ -39,9 +39,11 @@
 //#include "FairCandySwap.h"
 //#include "KthMissingPositiveNumber.h"
 //#include "ArrangingCoins.h"
-#include "SearchInsert.h"
+//#include "SearchInsert.h"*/
+#include "CheckIfExist.h"
 
 using namespace std;
+
 /*
 void Test_0() {
     //int target = 3;
@@ -186,16 +188,16 @@ void Test_19() {
 
 int main() {
 
-    vector v = { 1,3,4,5 };
-    cout << searchInsert(v, -1) << endl;
-    cout << searchInsert(v, 0) << endl;
-    cout << searchInsert(v, 1) << endl;
-    cout << searchInsert(v, 2) << endl;
-    cout << searchInsert(v, 3) << endl;
-    cout << searchInsert(v, 4) << endl;
-    cout << searchInsert(v, 5) << endl;
-    cout << searchInsert(v, 6) << endl;
-    cout << searchInsert(v, 7) << endl;
+    vector v = { 10,2,5,3 };
+    cout << checkIfExist(v) << endl;
+    v = { 7,1,14,11 };
+    cout << checkIfExist(v) << endl;
+    v = { 3,1,7,11 };
+    cout << checkIfExist(v) << endl;
+    v = { -2, 0, 10, -19, 4, 6, -8 };
+    cout << checkIfExist(v) << endl;
+    v = { 0, 0 };
+    cout << checkIfExist(v) << endl;
 
     LOG_DURATION("Total duration");
 
