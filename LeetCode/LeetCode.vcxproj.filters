@@ -125,5 +125,8 @@
     <ClInclude Include="CheckIfExist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BitsOperations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

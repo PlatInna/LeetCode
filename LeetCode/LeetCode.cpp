@@ -40,7 +40,8 @@
 //#include "KthMissingPositiveNumber.h"
 //#include "ArrangingCoins.h"
 //#include "SearchInsert.h"*/
-#include "CheckIfExist.h"
+//#include "CheckIfExist.h"
+#include "BitsOperations.h"
 
 using namespace std;
 
@@ -186,18 +187,15 @@ void Test_19() {
 }
 */
 
-int main() {
+void printReverseStr(char* str) {
+    if (!*str)
+        return;
+    printReverseStr(str + 1);
+    putchar(*str);
+}
 
-    vector v = { 10,2,5,3 };
-    cout << checkIfExist(v) << endl;
-    v = { 7,1,14,11 };
-    cout << checkIfExist(v) << endl;
-    v = { 3,1,7,11 };
-    cout << checkIfExist(v) << endl;
-    v = { -2, 0, 10, -19, 4, 6, -8 };
-    cout << checkIfExist(v) << endl;
-    v = { 0, 0 };
-    cout << checkIfExist(v) << endl;
+int main() {
+    printBitsOperations();
 
     LOG_DURATION("Total duration");
 
