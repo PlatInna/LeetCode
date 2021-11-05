@@ -147,6 +147,7 @@
     <ClInclude Include="ArrangingCoins.h" />
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BitsOperations.h" />
+    <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="CheckIfExist.h" />
     <ClInclude Include="CountNegatives.h" />
     <ClInclude Include="DistanceBetweenTwoArrays.h" />

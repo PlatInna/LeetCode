@@ -42,6 +42,7 @@
 //#include "SearchInsert.h"*/
 //#include "CheckIfExist.h"
 #include "BitsOperations.h"
+#include "BubbleSort.h"
 
 using namespace std;
 
@@ -192,10 +193,33 @@ void printReverseStr(char* str) {
         return;
     printReverseStr(str + 1);
     putchar(*str);
+    cout << *str << '\n';
+}
+
+int fun1(int p) {
+    ++p;
+    return p++;
+}
+
+int fun2(int& p) {
+    ++p;
+    return p++;
 }
 
 int main() {
+    int i;
+    char s[3] = { 'a','b','c'};
+    cout << s[1] << '\n';
+    //printReverseStr(s);
+
+    int a = fun1(1);
+    int b = fun2(a);
+    int var = 2;
+    int* p = &var;
+    *p = 4;
+    cout << var << ' ' << p << '\n';
     printBitsOperations();
+    bubbleSort();
 
     LOG_DURATION("Total duration");
 

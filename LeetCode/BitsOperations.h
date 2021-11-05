@@ -21,4 +21,14 @@ void printBitsOperations() {
 	std::cout << "bm >> 3  " << (bm >> 3) << '\n';
 	std::cout << signed_var << " (signed_var >> 2)   - division by 4           " << (signed_var >> 2) << '\n';
 	std::cout << ' ' << unsigned_var << " (unsigned_var << 1) - multiplication by 2 " << (unsigned_var << 1) << '\n' << '\n';
+
+	std::cout << "======= This computing environment uses: =======" <<       std::endl;
+	std::cout << sizeof(char) << " bytes for chars" <<       std::endl;
+	std::cout << sizeof(short int) << " bytes for shorts" << std::endl;
+	std::cout << sizeof(int) << " bytes for ints" <<         std::endl;
+	std::cout << sizeof(long int) << " bytes for longs" <<   std::endl;
+	std::cout << sizeof(float) << " bytes for floats" <<     std::endl;
+	std::cout << sizeof(double) << " bytes for doubles" <<   std::endl;
+	std::cout << sizeof(bool) << " byte for bools" <<        std::endl;
+	std::cout << sizeof(int*) << " bytes for pointers" <<    std::endl << '\n';
 }
