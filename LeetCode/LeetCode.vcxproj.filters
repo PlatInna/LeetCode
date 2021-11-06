@@ -131,5 +131,8 @@
     <ClInclude Include="BubbleSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TriangularMatrices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

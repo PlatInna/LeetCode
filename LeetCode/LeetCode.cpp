@@ -41,8 +41,9 @@
 //#include "ArrangingCoins.h"
 //#include "SearchInsert.h"*/
 //#include "CheckIfExist.h"
-#include "BitsOperations.h"
-#include "BubbleSort.h"
+//#include "BitsOperations.h"
+//#include "BubbleSort.h"
+#include "TriangularMatrices.h"
 
 using namespace std;
 
@@ -196,30 +197,9 @@ void printReverseStr(char* str) {
     cout << *str << '\n';
 }
 
-int fun1(int p) {
-    ++p;
-    return p++;
-}
-
-int fun2(int& p) {
-    ++p;
-    return p++;
-}
-
 int main() {
-    int i;
-    char s[3] = { 'a','b','c'};
-    cout << s[1] << '\n';
-    //printReverseStr(s);
-
-    int a = fun1(1);
-    int b = fun2(a);
-    int var = 2;
-    int* p = &var;
-    *p = 4;
-    cout << var << ' ' << p << '\n';
-    printBitsOperations();
-    bubbleSort();
+    triangularMatrices(9, 9);
+    //printBitsOperations();
 
     LOG_DURATION("Total duration");
 

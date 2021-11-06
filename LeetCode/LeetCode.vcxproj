@@ -180,6 +180,7 @@
     <ClInclude Include="SearchInsert.h" />
     <ClInclude Include="SpecialArray.h" />
     <ClInclude Include="test_runner.h" />
+    <ClInclude Include="TriangularMatrices.h" />
     <ClInclude Include="TwoSum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
