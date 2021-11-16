@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <vector>
+#include<forward_list>
 
 #include "profile.h"
 #include "test_runner.h"
@@ -39,11 +40,12 @@
 //#include "FairCandySwap.h"
 //#include "KthMissingPositiveNumber.h"
 //#include "ArrangingCoins.h"
-//#include "SearchInsert.h"*/
+//#include "SearchInsert.h"
 //#include "CheckIfExist.h"
 //#include "BitsOperations.h"
 //#include "BubbleSort.h"
-#include "TriangularMatrices.h"
+//#include "TriangularMatrices.h"*/
+#include "GetDecimalValue.h"
 
 using namespace std;
 
@@ -189,17 +191,37 @@ void Test_19() {
 }
 */
 
-void printReverseStr(char* str) {
-    if (!*str)
-        return;
-    printReverseStr(str + 1);
-    putchar(*str);
-    cout << *str << '\n';
-}
-
 int main() {
-    triangularMatrices(9, 9);
-    //printBitsOperations();
+    vector<bool> v = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
+    //vector<bool> v = { 1,0,1 };
+    //vector<int> v = { 5,6,7 };
+    
+    std::forward_list<bool> ls = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
+
+
+    ListNode l;
+    for (int i = v.size() - 1; i >= 0; i--) {
+        l.PushFront(v[i]);
+    }
+
+    ListNode* h = l.head;
+
+    while (h != nullptr) {
+        cout << h->val;
+        h = h->next;
+    }
+    cout << endl;
+
+
+    cout << 0b1110010010101 << endl;
+    cout << 0b1011 << endl;
+    
+    //cout << getDecimalValue(v) << endl;
+    cout << getDecimalValue(l.head) << endl;
+    cout << getDecimalValue_1(l.head) << endl;
+    cout << getDecimalValue_2(l.head) << endl;
+    cout << getDecimalValue_3(l.head) << endl;
+    cout << getDecimalValue_4(l.head) << endl;
 
     LOG_DURATION("Total duration");
 

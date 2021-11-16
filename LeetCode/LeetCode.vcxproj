@@ -159,6 +159,7 @@
     <ClInclude Include="FindPeakElement.h" />
     <ClInclude Include="FirstBadVersion.h" />
     <ClInclude Include="generateParenthesis.h" />
+    <ClInclude Include="GetDecimalValue.h" />
     <ClInclude Include="guessNumber.h" />
     <ClInclude Include="IntersectionTwoArrays.h" />
     <ClInclude Include="isSumEqual.h" />
