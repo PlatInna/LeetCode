@@ -46,6 +46,7 @@
 //#include "BubbleSort.h"
 //#include "TriangularMatrices.h"*/
 #include "GetDecimalValue.h"
+#include "MiddleNode.h"
 
 using namespace std;
 
@@ -192,9 +193,9 @@ void Test_19() {
 */
 
 int main() {
-    vector<bool> v = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
+    //vector<bool> v = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
     //vector<bool> v = { 1,0,1 };
-    //vector<int> v = { 5,6,7 };
+    vector<int> v = { 0,1,2,3,4,5,6,7,8,9,0,0 };
     
     std::forward_list<bool> ls = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
 
@@ -212,17 +213,18 @@ int main() {
     }
     cout << endl;
 
-
-    cout << 0b1110010010101 << endl;
-    cout << 0b1011 << endl;
-    
+    cout << middleNode(l.head)->val << endl;
+    cout << middleNode_1(l.head)->val << endl;
+    cout << middleNode_2(l.head)->val << endl;
+    //cout << 0b1110010010101 << endl;
+    //cout << 0b1011 << endl;
     //cout << getDecimalValue(v) << endl;
-    cout << getDecimalValue(l.head) << endl;
-    cout << getDecimalValue_1(l.head) << endl;
-    cout << getDecimalValue_2(l.head) << endl;
-    cout << getDecimalValue_3(l.head) << endl;
-    cout << getDecimalValue_4(l.head) << endl;
-
+    //cout << getDecimalValue(l.head) << endl;
+    //cout << getDecimalValue_1(l.head) << endl;
+    //cout << getDecimalValue_2(l.head) << endl;
+    //cout << getDecimalValue_3(l.head) << endl;
+    //cout << getDecimalValue_4(l.head) << endl;
+   
     LOG_DURATION("Total duration");
 
     TestRunner tr;

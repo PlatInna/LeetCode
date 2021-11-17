@@ -167,6 +167,7 @@
     <ClInclude Include="KthMissingPositiveNumber.h" />
     <ClInclude Include="kWeakestRows.h" />
     <ClInclude Include="maximumUnits.h" />
+    <ClInclude Include="MiddleNode.h" />
     <ClInclude Include="minRefuelStops.h" />
     <ClInclude Include="MyPow.h" />
     <ClInclude Include="mySqrt.h" />
