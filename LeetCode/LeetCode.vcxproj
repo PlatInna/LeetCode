@@ -150,6 +150,7 @@
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="CheckIfExist.h" />
     <ClInclude Include="CountNegatives.h" />
+    <ClInclude Include="DeleteNode.h" />
     <ClInclude Include="DistanceBetweenTwoArrays.h" />
     <ClInclude Include="FairCandySwap.h" />
     <ClInclude Include="FindClosestElements.h" />

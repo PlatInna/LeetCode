@@ -47,6 +47,7 @@
 //#include "TriangularMatrices.h"*/
 #include "GetDecimalValue.h"
 #include "MiddleNode.h"
+#include "DeleteNode.h"
 
 using namespace std;
 
@@ -195,10 +196,9 @@ void Test_19() {
 int main() {
     //vector<bool> v = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
     //vector<bool> v = { 1,0,1 };
-    vector<int> v = { 0,1,2,3,4,5,6,7,8,9,0,0 };
+    vector<int> v = { 0,1,2,3,4,5,6,7,8,9 };
     
-    std::forward_list<bool> ls = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
-
+    //std::forward_list<bool> ls = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
 
     ListNode l;
     for (int i = v.size() - 1; i >= 0; i--) {
@@ -213,9 +213,21 @@ int main() {
     }
     cout << endl;
 
-    cout << middleNode(l.head)->val << endl;
-    cout << middleNode_1(l.head)->val << endl;
-    cout << middleNode_2(l.head)->val << endl;
+    ListNode* node_to_del = l.head->next->next->next;
+    deleteNode(node_to_del);
+
+    h = l.head;
+    ListNode* cur = l.head;
+    while (h != nullptr) {
+        cout << h->val;
+        //cout << h->val << ' ' << h->next << ' ' << h->next->next - h->next << '\n';
+        h = h->next;
+    }
+    cout << endl;
+
+    //cout << middleNode(l.head)->val << endl;
+    //cout << middleNode_1(l.head)->val << endl;
+    //cout << middleNode_2(l.head)->val << endl;
     //cout << 0b1110010010101 << endl;
     //cout << 0b1011 << endl;
     //cout << getDecimalValue(v) << endl;
