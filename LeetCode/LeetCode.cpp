@@ -44,10 +44,12 @@
 //#include "CheckIfExist.h"
 //#include "BitsOperations.h"
 //#include "BubbleSort.h"
-//#include "TriangularMatrices.h"*/
-#include "GetDecimalValue.h"
-#include "MiddleNode.h"
-#include "DeleteNode.h"
+//#include "TriangularMatrices.h"
+//#include "GetDecimalValue.h"
+//#include "MiddleNode.h"
+//#include "DeleteNode.h"*/
+
+#include "MyHashSet.h"
 
 using namespace std;
 
@@ -194,75 +196,40 @@ void Test_19() {
 */
 
 int main() {
-    //vector<bool> v = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
-    //vector<bool> v = { 1,0,1 };
-    vector<int> v = { 0,1,2,3,4,5,6,7,8,9 };
-    
-    //std::forward_list<bool> ls = { 1,1,1,0,0,1,0,0,1,0,1,0,1 };
-
-    ListNode l;
-    for (int i = v.size() - 1; i >= 0; i--) {
-        l.PushFront(v[i]);
-    }
-
-    ListNode* h = l.head;
-
-    while (h != nullptr) {
-        cout << h->val;
-        h = h->next;
-    }
-    cout << endl;
-
-    ListNode* node_to_del = l.head->next->next->next;
-    deleteNode(node_to_del);
-
-    h = l.head;
-    ListNode* cur = l.head;
-    while (h != nullptr) {
-        cout << h->val;
-        //cout << h->val << ' ' << h->next << ' ' << h->next->next - h->next << '\n';
-        h = h->next;
-    }
-    cout << endl;
-
-    //cout << middleNode(l.head)->val << endl;
-    //cout << middleNode_1(l.head)->val << endl;
-    //cout << middleNode_2(l.head)->val << endl;
-    //cout << 0b1110010010101 << endl;
-    //cout << 0b1011 << endl;
-    //cout << getDecimalValue(v) << endl;
-    //cout << getDecimalValue(l.head) << endl;
-    //cout << getDecimalValue_1(l.head) << endl;
-    //cout << getDecimalValue_2(l.head) << endl;
-    //cout << getDecimalValue_3(l.head) << endl;
-    //cout << getDecimalValue_4(l.head) << endl;
-   
     LOG_DURATION("Total duration");
 
-    TestRunner tr;
-    {
-        LOG_DURATION("duration");
-        //RUN_TEST(tr, Test_0);
-        //RUN_TEST(tr, Test_1);
-        //RUN_TEST(tr, Test_2);
-        //RUN_TEST(tr, Test_3);
-        //RUN_TEST(tr, Test_4);
-        //RUN_TEST(tr, Test_5);
-        //RUN_TEST(tr, Test_6);
-        //RUN_TEST(tr, Test_7);
-        //RUN_TEST(tr, Test_8);
-        //RUN_TEST(tr, Test_9);
-        //RUN_TEST(tr, Test_10);
-        //RUN_TEST(tr, Test_11);
-        //RUN_TEST(tr, Test_12);
-        //RUN_TEST(tr, Test_13);
-        //RUN_TEST(tr, Test_14);
-        //RUN_TEST(tr, Test_15);
-        //RUN_TEST(tr, Test_16);
-        //RUN_TEST(tr, Test_17);
-        //RUN_TEST(tr, Test_18);
-        //RUN_TEST(tr, Test_19);
-    }    
+    MyHashSet hs;
+
+    for (int i = 0; i < 1'000'000; i++) {
+        hs.add(i);
+    }
+
+    cout << "ok";
+
+    //TestRunner tr;
+    //{
+    //    LOG_DURATION("duration");
+    //    //RUN_TEST(tr, Test_0);
+    //    //RUN_TEST(tr, Test_1);
+    //    //RUN_TEST(tr, Test_2);
+    //    //RUN_TEST(tr, Test_3);
+    //    //RUN_TEST(tr, Test_4);
+    //    //RUN_TEST(tr, Test_5);
+    //    //RUN_TEST(tr, Test_6);
+    //    //RUN_TEST(tr, Test_7);
+    //    //RUN_TEST(tr, Test_8);
+    //    //RUN_TEST(tr, Test_9);
+    //    //RUN_TEST(tr, Test_10);
+    //    //RUN_TEST(tr, Test_11);
+    //    //RUN_TEST(tr, Test_12);
+    //    //RUN_TEST(tr, Test_13);
+    //    //RUN_TEST(tr, Test_14);
+    //    //RUN_TEST(tr, Test_15);
+    //    //RUN_TEST(tr, Test_16);
+    //    //RUN_TEST(tr, Test_17);
+    //    //RUN_TEST(tr, Test_18);
+    //    //RUN_TEST(tr, Test_19);
+    //}    
 
     return 0;
 }

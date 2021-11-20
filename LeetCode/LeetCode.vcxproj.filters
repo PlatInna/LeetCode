@@ -143,5 +143,8 @@
     <ClInclude Include="DeleteNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MyHashSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
