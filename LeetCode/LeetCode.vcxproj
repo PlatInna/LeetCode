@@ -170,6 +170,7 @@
     <ClInclude Include="maximumUnits.h" />
     <ClInclude Include="MiddleNode.h" />
     <ClInclude Include="minRefuelStops.h" />
+    <ClInclude Include="MyHashMap.h" />
     <ClInclude Include="MyHashSet.h" />
     <ClInclude Include="MyPow.h" />
     <ClInclude Include="mySqrt.h" />

@@ -50,6 +50,7 @@
 //#include "DeleteNode.h"*/
 
 #include "MyHashSet.h"
+#include "MyHashMap.h"
 
 using namespace std;
 
@@ -199,10 +200,15 @@ int main() {
     LOG_DURATION("Total duration");
 
     MyHashSet hs;
+    MyHashMap hm;
 
-    for (int i = 0; i < 1'000'000; i++) {
-        hs.add(i);
-    }
+    //for (int i = 0; i < 1'000'000; i++) {
+    //    //hs.add(i);
+    //    hm.put(i, i);
+    //}
+    hm.put(1001, 1);
+    cout << hm.get(1001) << endl;
+    hm.remove(1001);
 
     cout << "ok";
 
