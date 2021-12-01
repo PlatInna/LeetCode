@@ -3,10 +3,12 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 #include<forward_list>
 
 #include "profile.h"
 #include "test_runner.h"
+
 /*
 //#include "minRefuelStops.h"
 //#include "palindromePairs.h"
@@ -47,11 +49,11 @@
 //#include "TriangularMatrices.h"
 //#include "GetDecimalValue.h"
 //#include "MiddleNode.h"
-//#include "DeleteNode.h"*/
-
-#include "MyHashSet.h"
-#include "MyHashMap.h"
-
+//#include "DeleteNode.h"
+//#include "MyHashSet.h"
+//#include "MyHashMap.h"*/
+#include "GetDecimalValue.h"
+#include "DeleteDuplicates.h"
 using namespace std;
 
 /*
@@ -198,17 +200,14 @@ void Test_19() {
 
 int main() {
     LOG_DURATION("Total duration");
+    vector<int> v = { 1,1,1,2,2,2,3,3,4,5,6,6 };
+    reverse(v.begin(), v.end());
+    ListNode l;
+    for (int el : v) {
+        l.PushFront(el);
+    }
 
-    MyHashSet hs;
-    MyHashMap hm;
-
-    //for (int i = 0; i < 1'000'000; i++) {
-    //    //hs.add(i);
-    //    hm.put(i, i);
-    //}
-    hm.put(1001, 1);
-    cout << hm.get(1001) << endl;
-    hm.remove(1001);
+    auto h = deleteDuplicates(l.head);
 
     cout << "ok";
 
