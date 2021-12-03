@@ -154,6 +154,7 @@
     <ClInclude Include="DeleteNode.h" />
     <ClInclude Include="DistanceBetweenTwoArrays.h" />
     <ClInclude Include="FairCandySwap.h" />
+    <ClInclude Include="Fibonacci.h" />
     <ClInclude Include="FindClosestElements.h" />
     <ClInclude Include="FindDuplicate.h" />
     <ClInclude Include="FindMinInRotatedSortedArray.h" />

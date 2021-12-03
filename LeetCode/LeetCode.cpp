@@ -54,6 +54,7 @@
 //#include "MyHashMap.h"*/
 #include "GetDecimalValue.h"
 #include "DeleteDuplicates.h"
+#include "Fibonacci.h"
 using namespace std;
 
 /*
@@ -200,15 +201,18 @@ void Test_19() {
 
 int main() {
     LOG_DURATION("Total duration");
-    vector<int> v = { 1,1,1,2,2,2,3,3,4,5,6,6 };
-    reverse(v.begin(), v.end());
-    ListNode l;
-    for (int el : v) {
-        l.PushFront(el);
-    }
-
-    auto h = deleteDuplicates(l.head);
-
+    cout << fib(0) << '\n';
+    cout << fib(1) << '\n';
+    cout << fib(2) << '\n';
+    cout << fib(3) << '\n';
+    cout << fib(4) << '\n';
+    cout << fib(5) << '\n';
+    cout << fib(6) << '\n';
+    cout << fib(7) << '\n';
+    cout << fib(8) << '\n';
+    cout << fib(9) << '\n';
+    cout << fib(10) << '\n';
+    cout << fib(11) << '\n';
     cout << "ok";
 
     //TestRunner tr;
