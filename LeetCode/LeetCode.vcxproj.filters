@@ -155,5 +155,8 @@
     <ClInclude Include="Fibonacci.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PowerOfTwo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

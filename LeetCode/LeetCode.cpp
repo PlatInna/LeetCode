@@ -5,6 +5,7 @@
 #include <vector>
 #include <algorithm>
 #include<forward_list>
+//#include <afxpanedivider.h>
 
 #include "profile.h"
 #include "test_runner.h"
@@ -55,6 +56,7 @@
 #include "GetDecimalValue.h"
 #include "DeleteDuplicates.h"
 #include "Fibonacci.h"
+#include "PowerOfTwo.h"
 using namespace std;
 
 /*
@@ -201,20 +203,10 @@ void Test_19() {
 
 int main() {
     LOG_DURATION("Total duration");
-    cout << fib(0) << '\n';
-    cout << fib(1) << '\n';
-    cout << fib(2) << '\n';
-    cout << fib(3) << '\n';
-    cout << fib(4) << '\n';
-    cout << fib(5) << '\n';
-    cout << fib(6) << '\n';
-    cout << fib(7) << '\n';
-    cout << fib(8) << '\n';
-    cout << fib(9) << '\n';
-    cout << fib(10) << '\n';
-    cout << fib(11) << '\n';
-    cout << "ok";
 
+    cout << isPowerOfTwo(5) << '\n';
+    cout << "ok" << endl;
+    
     //TestRunner tr;
     //{
     //    LOG_DURATION("duration");

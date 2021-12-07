@@ -180,6 +180,7 @@
     <ClInclude Include="palindromePairs.h" />
     <ClInclude Include="PeakIndexInMountainArray.h" />
     <ClInclude Include="PerfectSquare.h" />
+    <ClInclude Include="PowerOfTwo.h" />
     <ClInclude Include="profile.h" />
     <ClInclude Include="rangeSumQuery.h" />
     <ClInclude Include="RotatedSortedArray.h" />
