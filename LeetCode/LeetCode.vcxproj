@@ -142,6 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode.cpp" />
+    <ClCompile Include="MyStack.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrangingCoins.h" />
@@ -176,6 +177,7 @@
     <ClInclude Include="MyHashSet.h" />
     <ClInclude Include="MyPow.h" />
     <ClInclude Include="mySqrt.h" />
+    <ClInclude Include="MyStack.h" />
     <ClInclude Include="NextGreatestLetter.h" />
     <ClInclude Include="palindromePairs.h" />
     <ClInclude Include="PeakIndexInMountainArray.h" />
