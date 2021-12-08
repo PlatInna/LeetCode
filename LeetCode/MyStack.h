@@ -36,6 +36,7 @@ public:
     Stack(int size = 100);
     ~Stack();
     void Push(int value);
+    void operator<< (int value);
     int Pop();
 };
 

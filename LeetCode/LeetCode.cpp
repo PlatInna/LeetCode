@@ -53,10 +53,12 @@
 //#include "DeleteNode.h"
 //#include "MyHashSet.h"
 //#include "MyHashMap.h"*/
-#include "GetDecimalValue.h"
-#include "DeleteDuplicates.h"
-#include "Fibonacci.h"
+//#include "GetDecimalValue.h"
+//#include "DeleteDuplicates.h"
+//#include "Fibonacci.h"
 #include "PowerOfTwo.h"
+#include "MyStack.h"
+
 using namespace std;
 
 /*
@@ -204,7 +206,17 @@ void Test_19() {
 int main() {
     LOG_DURATION("Total duration");
 
-    cout << isPowerOfTwo(5) << '\n';
+    Stack st;
+    int var = 30;
+    st << 1;
+    st << 2;
+    st << 4 * 5;
+    st << var;
+    cout << st.Pop() << '\n';
+    cout << st.Pop() << '\n';
+    cout << st.Pop() << '\n';
+    cout << st.Pop() << '\n';
+    //cout << isPowerOfTwo(5) << '\n';
     cout << "ok" << endl;
     
     //TestRunner tr;
