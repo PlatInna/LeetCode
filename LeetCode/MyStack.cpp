@@ -34,13 +34,18 @@ void Stack::Push(int value) {
 	stackstore[SP++] = value;
 }
 
-void Stack::operator<<(int value) {
-	Push(value);
-}
-
 int Stack::Pop() {
 	if (SP == 0)
 		throw stack_empty("Stack is empty");
 	return stackstore[--SP];
 }
 
+Stack& Stack::operator<<(int v) {
+	Push(v);
+	return *this;
+}
+
+Stack& Stack::operator>>(int& v) {
+	v = Pop();
+	return *this;
+}

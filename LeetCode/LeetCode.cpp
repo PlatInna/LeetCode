@@ -207,15 +207,15 @@ int main() {
     LOG_DURATION("Total duration");
 
     Stack st;
-    int var = 30;
+    int var = 30, i;
     st << 1;
     st << 2;
     st << 4 * 5;
     st << var;
+    st >> var >> i;
     cout << st.Pop() << '\n';
     cout << st.Pop() << '\n';
-    cout << st.Pop() << '\n';
-    cout << st.Pop() << '\n';
+    cout << var << endl << i << endl;
     //cout << isPowerOfTwo(5) << '\n';
     cout << "ok" << endl;
     
