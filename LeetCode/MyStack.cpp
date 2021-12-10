@@ -49,3 +49,22 @@ Stack& Stack::operator>>(int& v) {
 	v = Pop();
 	return *this;
 }
+
+int& Stack::operator[](int idx) {
+	if (idx > 0 || idx <= -SP)
+		throw std::range_error("out of Stack");
+	return stackstore[SP + idx - 1];
+}
+
+//or we can use the following definitions as standalone functions without relation to the class
+Stack& operator<<(Stack& s, int v) {
+	s.Push(v);
+	return s;
+}
+
+Stack& operator>>(Stack& s, int& v) {
+	v = s.Pop();
+	return s;
+}
+
+

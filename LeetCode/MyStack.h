@@ -39,6 +39,7 @@ public:
     int Pop();
     Stack& operator<< (int v);
     Stack& operator>> (int& v);
+    int& operator[] (int idx);
 };
 
 #endif

@@ -208,10 +208,11 @@ int main() {
 
     Stack st;
     int var = 30, i;
-    st << 1;
+    st << 7;
     st << 2;
     st << 4 * 5;
     st << var;
+    cout << st[0] << ' ' << st[-1] << ' ' << st[-2] << ' ' << st[-3] << endl;
     st >> var >> i;
     cout << st.Pop() << '\n';
     cout << st.Pop() << '\n';
