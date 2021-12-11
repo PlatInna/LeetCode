@@ -57,6 +57,7 @@
 //#include "DeleteDuplicates.h"
 //#include "Fibonacci.h"
 #include "PowerOfTwo.h"
+#include "PowerOfThree.h"
 #include "MyStack.h"
 
 using namespace std;
@@ -206,18 +207,14 @@ void Test_19() {
 int main() {
     LOG_DURATION("Total duration");
 
-    Stack st;
-    int var = 30, i;
-    st << 7;
-    st << 2;
-    st << 4 * 5;
-    st << var;
-    cout << st[0] << ' ' << st[-1] << ' ' << st[-2] << ' ' << st[-3] << endl;
-    st >> var >> i;
-    cout << st.Pop() << '\n';
-    cout << st.Pop() << '\n';
-    cout << var << endl << i << endl;
-    //cout << isPowerOfTwo(5) << '\n';
+    cout << isPowerOfThree(-1) << '\n';
+    cout << isPowerOfThree(0) << '\n';
+    cout << isPowerOfThree(1) << '\n';
+    cout << isPowerOfThree(3) << '\n';
+    cout << isPowerOfThree(7) << '\n';
+    cout << isPowerOfThree(9) << '\n';
+    cout << isPowerOfThree(81) << '\n';
+    cout << isPowerOfThree(1568) << '\n';
     cout << "ok" << endl;
     
     //TestRunner tr;

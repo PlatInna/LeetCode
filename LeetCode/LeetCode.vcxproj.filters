@@ -164,5 +164,8 @@
     <ClInclude Include="MyStack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PowerOfThree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
