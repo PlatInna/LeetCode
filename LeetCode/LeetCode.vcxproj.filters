@@ -167,5 +167,8 @@
     <ClInclude Include="PowerOfThree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PowerOfFour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

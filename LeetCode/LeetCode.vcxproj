@@ -182,6 +182,7 @@
     <ClInclude Include="palindromePairs.h" />
     <ClInclude Include="PeakIndexInMountainArray.h" />
     <ClInclude Include="PerfectSquare.h" />
+    <ClInclude Include="PowerOfFour.h" />
     <ClInclude Include="PowerOfThree.h" />
     <ClInclude Include="PowerOfTwo.h" />
     <ClInclude Include="profile.h" />
