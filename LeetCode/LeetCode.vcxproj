@@ -150,6 +150,7 @@
     <ClInclude Include="BitsOperations.h" />
     <ClInclude Include="BubbleSort.h" />
     <ClInclude Include="CheckIfExist.h" />
+    <ClInclude Include="ConcatenationOfArray.h" />
     <ClInclude Include="CountNegatives.h" />
     <ClInclude Include="DeleteDuplicates.h" />
     <ClInclude Include="DeleteNode.h" />

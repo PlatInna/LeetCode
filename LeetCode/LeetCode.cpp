@@ -56,9 +56,10 @@
 //#include "GetDecimalValue.h"
 //#include "DeleteDuplicates.h"
 //#include "Fibonacci.h"
-#include "PowerOfTwo.h"
-#include "PowerOfThree.h"
-#include "MyStack.h"
+//#include "PowerOfTwo.h"
+//#include "PowerOfThree.h"
+//#include "MyStack.h"
+#include "ConcatenationOfArray.h"
 
 using namespace std;
 
@@ -206,15 +207,8 @@ void Test_19() {
 
 int main() {
     LOG_DURATION("Total duration");
-
-    cout << isPowerOfThree(-1) << '\n';
-    cout << isPowerOfThree(0) << '\n';
-    cout << isPowerOfThree(1) << '\n';
-    cout << isPowerOfThree(3) << '\n';
-    cout << isPowerOfThree(7) << '\n';
-    cout << isPowerOfThree(9) << '\n';
-    cout << isPowerOfThree(81) << '\n';
-    cout << isPowerOfThree(1568) << '\n';
+    vector<int> v = { 1,2,1 };
+    auto ans = getConcatenation(v);
     cout << "ok" << endl;
     
     //TestRunner tr;

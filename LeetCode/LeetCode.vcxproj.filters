@@ -170,5 +170,8 @@
     <ClInclude Include="PowerOfFour.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ConcatenationOfArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
