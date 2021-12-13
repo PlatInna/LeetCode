@@ -149,6 +149,7 @@
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BitsOperations.h" />
     <ClInclude Include="BubbleSort.h" />
+    <ClInclude Include="BuildArray.h" />
     <ClInclude Include="CheckIfExist.h" />
     <ClInclude Include="ConcatenationOfArray.h" />
     <ClInclude Include="CountNegatives.h" />

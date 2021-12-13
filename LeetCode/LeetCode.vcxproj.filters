@@ -173,5 +173,8 @@
     <ClInclude Include="ConcatenationOfArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BuildArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
