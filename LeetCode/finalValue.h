@@ -11,7 +11,8 @@
 int finalValueAfterOperations(std::vector<std::string>& operations) {
     int X = 0;
     for (auto el : operations) {
-        if (el.find("++") != std::string::npos)
+        //if (el.find("++") != std::string::npos)
+        if (el[1] == '+')
             X++;
         else
             X--;
