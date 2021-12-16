@@ -179,5 +179,8 @@
     <ClInclude Include="finalValue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RunningSum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
