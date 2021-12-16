@@ -194,6 +194,7 @@
     <ClInclude Include="RunningSum.h" />
     <ClInclude Include="SearchForRange.h" />
     <ClInclude Include="SearchInsert.h" />
+    <ClInclude Include="ShuffleArray.h" />
     <ClInclude Include="SpecialArray.h" />
     <ClInclude Include="test_runner.h" />
     <ClInclude Include="TriangularMatrices.h" />

@@ -60,6 +60,7 @@
 //#include "PowerOfThree.h"
 //#include "MyStack.h"
 #include "ConcatenationOfArray.h"
+#include "ShuffleArray.h"
 
 using namespace std;
 
@@ -207,7 +208,8 @@ void Test_19() {
 
 int main() {
     LOG_DURATION("Total duration");
-    vector<int> v = { 1,2,1 };
+    vector<int> v = { 1,2, 4,5 ,6};
+
     auto ans = getConcatenation(v);
     cout << "ok" << endl;
     
