@@ -185,5 +185,8 @@
     <ClInclude Include="ShuffleArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MaximumWealth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
