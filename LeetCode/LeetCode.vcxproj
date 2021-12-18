@@ -170,6 +170,7 @@
     <ClInclude Include="guessNumber.h" />
     <ClInclude Include="IntersectionTwoArrays.h" />
     <ClInclude Include="isSumEqual.h" />
+    <ClInclude Include="KidsWithCandies.h" />
     <ClInclude Include="kInversePairs.h" />
     <ClInclude Include="KthMissingPositiveNumber.h" />
     <ClInclude Include="kWeakestRows.h" />
