@@ -16,6 +16,7 @@ std::vector<bool> kidsWithCandies(std::vector<int>& candies, int extraCandies) {
     for (int i = 0; i < candies.size(); i++) {
         if (candies[i] + extraCandies < max) {
             result.push_back(false);
+            
         }
         else {
             result.push_back(true);

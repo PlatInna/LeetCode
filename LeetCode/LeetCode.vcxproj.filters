@@ -191,5 +191,8 @@
     <ClInclude Include="KidsWithCandies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="FirstPalindrome.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

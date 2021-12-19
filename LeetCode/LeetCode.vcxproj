@@ -165,6 +165,7 @@
     <ClInclude Include="FindMinInRotatedSortedArray2.h" />
     <ClInclude Include="FindPeakElement.h" />
     <ClInclude Include="FirstBadVersion.h" />
+    <ClInclude Include="FirstPalindrome.h" />
     <ClInclude Include="generateParenthesis.h" />
     <ClInclude Include="GetDecimalValue.h" />
     <ClInclude Include="guessNumber.h" />
