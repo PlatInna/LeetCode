@@ -194,5 +194,8 @@
     <ClInclude Include="FirstPalindrome.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GoodPairs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
