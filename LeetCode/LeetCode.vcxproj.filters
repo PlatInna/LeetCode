@@ -197,5 +197,8 @@
     <ClInclude Include="GoodPairs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SmallerNumbers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
