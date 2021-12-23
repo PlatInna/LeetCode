@@ -153,6 +153,7 @@
     <ClInclude Include="CheckIfExist.h" />
     <ClInclude Include="ConcatenationOfArray.h" />
     <ClInclude Include="CountNegatives.h" />
+    <ClInclude Include="DecompressRLElist.h" />
     <ClInclude Include="DeleteDuplicates.h" />
     <ClInclude Include="DeleteNode.h" />
     <ClInclude Include="DistanceBetweenTwoArrays.h" />
