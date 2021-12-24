@@ -203,5 +203,8 @@
     <ClInclude Include="DecompressRLElist.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RestoreString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

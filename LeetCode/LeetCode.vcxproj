@@ -195,6 +195,7 @@
     <ClInclude Include="PowerOfTwo.h" />
     <ClInclude Include="profile.h" />
     <ClInclude Include="rangeSumQuery.h" />
+    <ClInclude Include="RestoreString.h" />
     <ClInclude Include="RotatedSortedArray.h" />
     <ClInclude Include="RunningSum.h" />
     <ClInclude Include="SearchForRange.h" />

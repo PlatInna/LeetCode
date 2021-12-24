@@ -206,11 +206,9 @@ void Test_19() {
 }
 */
 
+
 int main() {
     LOG_DURATION("Total duration");
-    vector<int> v = { 1,2, 4,5 ,6};
-
-    auto ans = getConcatenation(v);
     cout << "ok" << endl;
     
     //TestRunner tr;
