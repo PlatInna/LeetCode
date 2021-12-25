@@ -206,28 +206,8 @@ void Test_19() {
 }
 */
 
-std::string restoreString(std::string s, std::vector<int>& indices) {
-    std::string res = s;
-    for (int i = 0; i < s.size(); i++) {
-        res[indices[i]] = s[i];
-    }
-    return res;
-}
-
-std::string restoreString_(std::string s, std::vector<int>& indices) {
-    std::string res = s; int j = 0;
-    for (auto i : indices) {
-        res[i] = s[j++];
-    }
-    return res;
-}
-
 int main() {
     LOG_DURATION("Total duration");
-
-    std::vector<int> v = { 4,5,6,7,0,2,1,3 };
-    std::string s = "codeleet";
-    auto r = restoreString_(s, v);
 
     cout << "ok" << endl;
     
