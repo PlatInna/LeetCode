@@ -209,5 +209,8 @@
     <ClInclude Include="DecodeXORedArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CreateTargetArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
