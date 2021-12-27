@@ -59,8 +59,8 @@
 //#include "PowerOfTwo.h"
 //#include "PowerOfThree.h"
 //#include "MyStack.h"
-#include "ConcatenationOfArray.h"
-#include "ShuffleArray.h"
+//#include "ConcatenationOfArray.h"
+//#include "ShuffleArray.h"
 
 using namespace std;
 

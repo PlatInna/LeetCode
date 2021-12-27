@@ -212,5 +212,8 @@
     <ClInclude Include="CreateTargetArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CountMatches.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
