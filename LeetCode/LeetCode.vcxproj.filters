@@ -215,5 +215,8 @@
     <ClInclude Include="CountMatches.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CountKDifference.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

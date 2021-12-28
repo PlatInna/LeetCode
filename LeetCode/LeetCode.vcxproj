@@ -152,6 +152,7 @@
     <ClInclude Include="BuildArray.h" />
     <ClInclude Include="CheckIfExist.h" />
     <ClInclude Include="ConcatenationOfArray.h" />
+    <ClInclude Include="CountKDifference.h" />
     <ClInclude Include="CountMatches.h" />
     <ClInclude Include="CountNegatives.h" />
     <ClInclude Include="CreateTargetArray.h" />
