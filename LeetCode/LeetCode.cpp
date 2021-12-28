@@ -206,8 +206,11 @@ void Test_19() {
 }
 */
 
+
+
 int main() {
     LOG_DURATION("Total duration");
+    vector<int> v = { 1,2,5,2,3 };
 
     cout << "ok" << endl;
     

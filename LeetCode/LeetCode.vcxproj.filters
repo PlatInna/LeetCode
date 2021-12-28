@@ -218,5 +218,8 @@
     <ClInclude Include="CountKDifference.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TargetIndices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

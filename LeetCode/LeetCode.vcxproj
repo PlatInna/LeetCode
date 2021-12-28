@@ -207,6 +207,7 @@
     <ClInclude Include="ShuffleArray.h" />
     <ClInclude Include="SmallerNumbers.h" />
     <ClInclude Include="SpecialArray.h" />
+    <ClInclude Include="TargetIndices.h" />
     <ClInclude Include="test_runner.h" />
     <ClInclude Include="TriangularMatrices.h" />
     <ClInclude Include="TwoSum.h" />
