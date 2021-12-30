@@ -185,6 +185,7 @@
     <ClInclude Include="MaximumWealth.h" />
     <ClInclude Include="MiddleNode.h" />
     <ClInclude Include="minRefuelStops.h" />
+    <ClInclude Include="MostWordsFound.h" />
     <ClInclude Include="MyHashMap.h" />
     <ClInclude Include="MyHashSet.h" />
     <ClInclude Include="MyPow.h" />

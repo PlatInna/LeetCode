@@ -221,5 +221,8 @@
     <ClInclude Include="TargetIndices.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MostWordsFound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
