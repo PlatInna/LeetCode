@@ -224,5 +224,8 @@
     <ClInclude Include="MostWordsFound.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ArrayStringsAreEqual.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

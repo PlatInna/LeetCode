@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrangingCoins.h" />
+    <ClInclude Include="ArrayStringsAreEqual.h" />
     <ClInclude Include="BinarySearch.h" />
     <ClInclude Include="BitsOperations.h" />
     <ClInclude Include="BubbleSort.h" />

@@ -2,6 +2,8 @@
 
 #include<string>
 #include<vector>
+#include<algorithm>
+#include<numeric>
 
 // A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
 // You are given an array of strings sentences, where each sentences[i] represents a single sentence.
@@ -21,4 +23,9 @@ int mostWordsFound(std::vector<std::string>& sentences) {
         }
     }
     return max_count;
+}
+
+int mostWordsFound_(std::vector<std::string>& s) {
+    return 1 + std::accumulate(std::begin(s), std::end(s), 0, [](int res, const auto& s) {
+        return std::max(res, (int)std::count(std::begin(s), std::end(s), ' ')); });
 }
