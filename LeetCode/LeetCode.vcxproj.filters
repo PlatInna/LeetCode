@@ -230,5 +230,8 @@
     <ClInclude Include="CountConsistentStrings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TruncateSentence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
